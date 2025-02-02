@@ -52,6 +52,16 @@ html {
     transition: color 0.4s ease; /* Smooth hover transition */
 }
 
+.header_link a:link{
+    text-decoration: none;
+    color: #444444;
+}
+
+.header_link a:visited{
+    text-decoration: none;
+    color: #444444;
+}
+
 .header_link:hover {
     color: red; /* Hover effect */
 }
@@ -106,16 +116,32 @@ html {
 .menu_item a {
     color: red;
     text-decoration: none;
+    visibility: hidden;
     font-size: 16px;
     margin-right: 10px;
+}
+
+.menu_item:hover a {
+    visibility: visible;
+}
+
+.menu_item:hover .menu_circle {
+    background-color: red;
 }
 
 .menu_circle {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: red;
+    background-color: black;
+    border-style: solid;
+    border-color: red;
+    border-width: 2.5px;
     transition: background-color 0.3s ease;
+}
+
+.menu_circle:hover {
+    background-color: red;
 }
 
 /* Active State for Side Menu */

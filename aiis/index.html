@@ -9,65 +9,60 @@
 </head>
 <body id="body">
     <script src="script.js"></script>
-
     <!-- Header Navigation Bar -->
-   <!-- Header Navigation Bar -->
-<div id="header">
-    <img src="images/logo.svg" id="header_logo" alt="AIIS Logo">
-    <div class="header_links">
-        <div class="header_link" id="header_team_details">
-            <a href="team-page.html">Team Details</a>
-        </div>
-        <div class="header_link" id="header_speaker_details">
-            <a href="speaker-page.html">Speaker Details</a>
-        </div>
-        <div class="header_link" id="header_venue">
-            <a href="#venue">Venue</a>
-        </div>
-        <div class="header_link" id="header_collaborators">
-            <a href="#collaborators">Collaborators</a>
+    <div id="header">
+        <img src="images/logo.svg" id="header_logo">
+        <div class="header_link" id="header_about">
+            <a href="#about">About</a>
         </div>
         <div class="header_link" id="header_speakers">
             <a href="#speakers">Speakers</a>
         </div>
-        <div class="header_link" id="header_about">
-            <a href="#about">About</a>
+        <div class="header_link" id="header_schedule">
+            <a href="#schedule">Schedule</a>
+        </div>
+        <div class="header_link" id="header_collaborators">
+            <a href="#collaborators">Collaborators</a>
+        </div>
+        <div class="header_link" id="header_venue">
+            <a href="#venue">Venue</a>
+        </div>
+        <div class="header_link" id="header_speaker_details">
+            <a href="speaker-page.html" id="test">Speaker Details</a>
+        </div>
+        <div class="header_link" id="header_team_details">
+            <a href="team-page.html">Team Details</a>
         </div>
     </div>
-</div>
-
-<!-- Sidebar Menu -->
-<div id="menu">
-    <div id="menu_speakers" class="menu_item">
-        <a href="#speakers">Speakers</a>
-        <div class="menu_circle"></div>
+    <!-- Sidebar Menu -->
+    <div id="menu">
+        <div id="menu_speakers" class="menu_item">
+            <a href="#speakers">Speakers</a>
+            <div class="menu_circle"></div>
+        </div>
+        <div id="menu_schedule" class="menu_item">
+            <a href="#schedule">Schedule</a>
+            <div class="menu_circle"></div>
+        </div>
+        <div id="menu_collaborators" class="menu_item">
+            <a href="#collaborators">Collaborators</a>
+            <div class="menu_circle"></div>
+        </div>
+        <div id="menu_venue" class="menu_item">
+            <a href="#venue">Venue</a>
+            <div class="menu_circle"></div>
+        </div>
+        <div id="menu_contact" class="menu_item">
+            <a href="#contact">Contact</a>
+            <div class="menu_circle"></div>
+        </div>
     </div>
-    <div id="menu_schedule" class="menu_item">
-        <a href="#schedule">Schedule</a>
-        <div class="menu_circle"></div>
-    </div>
-    <div id="menu_collaborators" class="menu_item">
-        <a href="#collaborators">Collaborators</a>
-        <div class="menu_circle"></div>
-    </div>
-    <div id="menu_venue" class="menu_item">
-        <a href="#venue">Venue</a>
-        <div class="menu_circle"></div>
-    </div>
-    <div id="menu_contact" class="menu_item">
-        <a href="#contact">Contact</a>
-        <div class="menu_circle"></div>
-    </div>
-</div>
-
-
     <!-- Main Content -->
     <div id="main_text">
         <h2>CONFERENCE OF CREATIVES</h2>
         <h1>AIIS</h1>
         <h2>Artificial Intelligence Implementation Show</h2>
     </div>
-
     <!-- About Section -->
     <div id="about">
         <h2>About</h2>
@@ -78,16 +73,14 @@
         </p>
         <img id="about_image" src="images/about.jpg" alt="About AIIS">
     </div>
-
     <!-- Speakers Section -->
     <div id="speakers">
         <div class="speaker_card">
             <img src="images/speaker1.jpg" class="speaker_image" alt="Speaker 1">
             <h2 class="speaker_name">Speaker 1</h2>
         </div>
-        <button id="speaker_button">More Info</button>
+        <button id="speaker_button" type="button">More Info</button>
     </div>
-
     <!-- Schedule Section -->
     <div id="schedule">
         <div id="schedule_header">
@@ -137,7 +130,6 @@
             </div>
         </div>
     </div>
-
     <!-- Collaborators Section -->
     <div id="collaborators">
         <img src="images/collaborator1.jpg" class="collaborator_image" alt="Collaborator 1">
@@ -145,7 +137,6 @@
         <img src="images/collaborator1.jpg" class="collaborator_image" alt="Collaborator 3">
         <img src="images/collaborator1.jpg" class="collaborator_image" alt="Collaborator 4">
     </div>
-
     <!-- Venue Section -->
     <div id="venue">
         <h2>The Venue</h2>
@@ -160,15 +151,16 @@
             title="Location Map">
         </iframe>
     </div>
-
-
-<!-- Footer Section -->
-<div id="footer">
-    <div id="contact">
-        <div id="contact_instagram">
-            <a href="https://www.instagram.com/aiis_conference/" target="_blank" rel="noopener noreferrer">
-                <img src="images/instagram-icon.webp" alt="Instagram" width="40" height="40">
-            </a>
+    <!-- Footer Section -->
+    <div id="footer">
+        <div id="contact">
+            <div id="contact_instagram">
+                <a href="https://www.instagram.com/aiis_conference/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/instagram-icon.webp" alt="Instagram" width="40" height="40">
+                </a>
+            </div>
         </div>
-    </div>
-</div>
+    </div> 
+     //TODO: E o fucking bulina rosie in spatele logo-ului de la instagram nu stiu de unde e scapa de ea pls
+</body>
+</html>
