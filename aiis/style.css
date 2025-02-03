@@ -38,6 +38,10 @@ html {
     margin-left: 20px; /* Consistent margin */
 }
 
+#header_about a{
+    color: red;
+}
+
 .header_links {
     display: flex;
     align-items: center;
@@ -144,29 +148,30 @@ html {
     background-color: red;
 }
 
-/* Active State for Side Menu */
-.menu_item.active .menu_circle {
-    background-color: green; /* Green for active section */
-}
-
 /* Main Content */
 #main_text {
-    margin-top: 200px; /* Adjusted for floating header */
-    text-align: center;
+    margin-top: 400px; /* Adjusted for floating header */
+    text-align: left;
+    margin-left: 25%;
     color: white;
     font-family: 'Alegreya Sans', sans-serif;
+    margin-bottom: 50%;
+    border-left: 5px solid white; /* Add white border to the left */
 }
 
 #main_text h1 {
     font-family: 'Exo 2', sans-serif;
-    font-size: 48px;
-    margin-bottom: 10px;
+    font-size: 200px;
+    margin-top: -40px;
+    margin-bottom: 20px;
+    margin-left: -5px;
 }
 
 #main_text h2 {
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 24px;
     margin-top: 0;
+    padding-left: 50px;
 }
 
 /* About Section */
@@ -188,9 +193,25 @@ html {
     margin-top: 0;
 }
 
+#about_text {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 10%);
+    color: white;
+    width: 35%;
+    height: 100px;
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 20px;
+    margin-left: 20%;
+}
+
 #about_image {
     max-width: 100%;
     border-radius: 10px;
+    padding-top: 30px;
 }
 
 /* Speakers Section */

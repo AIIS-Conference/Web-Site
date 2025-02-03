@@ -25,26 +25,10 @@ function eraseCookie(name) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    const initialSection = getCookie("currentSection");
-    const speakerButton = document.getElementById('speaker_button');
-    if (speakerButton) {
-        speakerButton.addEventListener('click', function() {
-            window.location.href = 'speaker-page.html';
-        });
+    if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
     }
-    if (initialSection) {
-        const initialLink = document.querySelector(`#header a[href="#${initialSection}"]`);
-        if (initialLink && initialLink.parentElement.classList.contains('header_link')) {
-            initialLink.style.color = 'red';
-            previousLink = initialLink;
-        }
-        const initialMenuLink = document.querySelector(`#menu a[href="#${initialSection}"]`);
-        if (initialMenuLink && initialMenuLink.parentElement.classList.contains('menu_item')) {
-            initialMenuLink.style.color = 'red';
-            previousMenuLink = initialMenuLink;
-        }
-    }
-});//on page load set current section link to red
+}); //Disable scroll restoration
 
 document.addEventListener('scroll', function() {
     const sections = document.querySelectorAll('div[id]');
@@ -84,4 +68,4 @@ document.addEventListener('scroll', function() {
             }
         }
     }
-});//change the color of the current section link to red on scroll
+}); //Change the color of the current section link on scroll
