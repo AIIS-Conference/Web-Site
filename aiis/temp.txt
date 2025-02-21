@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="icon" href="images/favicon.svg?v1" sizes="any" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <script src="script.js"></script>
+    <!-- Header Navigation Bar -->
+    <div id="header">
+        <img src="images/logo.svg" id="header_logo">
+        <div class="header_link" id="header_about">
+            <a href="#about">About</a>
+        </div>
+        <div class="header_link" id="header_speakers">
+            <a href="#speakers">Speakers</a>
+        </div>
+        <div class="header_link" id="header_schedule">
+            <a href="#schedule">Schedule</a>
+        </div>
+        <div class="header_link" id="header_collaborators">
+            <a href="#collaborators">Collaborators</a>
+        </div>
+        <div class="header_link" id="header_venue">
+            <a href="#venue">Venue</a>
+        </div>
+        <div class="header_link" id="header_speaker_details">
+            <a href="speaker-page.html" id="test">Speaker Details</a>
+        </div>
+        <div class="header_link" id="header_team_details">
+            <a href="team-page.html">Team Details</a>
+        </div>
+    </div>
+    <!-- Sidebar Menu -->
+    <div id="menu">
+        <div id="menu_speakers" class="menu_item">
+            <a href="#speakers">Speakers</a>
+            <div class="menu_circle"></div>
+        </div>
+        <div id="menu_schedule" class="menu_item">
+            <a href="#schedule">Schedule</a>
+            <div class="menu_circle"></div>
+        </div>
+        <div id="menu_collaborators" class="menu_item">
+            <a href="#collaborators">Collaborators</a>
+            <div class="menu_circle"></div>
+        </div>
+        <div id="menu_venue" class="menu_item">
+            <a href="#venue">Venue</a>
+            <div class="menu_circle"></div>
+        </div>
+        <div id="menu_contact" class="menu_item">
+            <a href="#contact">Contact</a>
+            <div class="menu_circle"></div>
+        </div>
+    </div>
+    <!-- Main Content -->
+    <div id="main_text">
+        <h2>CONFERENCE OF CREATIVES</h2>
+        <h1>AIIS</h1>
+        <h2>Artificial Intelligence Implementation Show</h2>
+    </div>
+    <!-- About Section -->
+    <div id="about">
+        <h2>About</h2>
+        <h1>AIIS</h1>
+        <h1>MAY 2024</h1>
+        <div id="about_text">
+            <p>
+                The Artificial Intelligence Implementation Show is a unique way to interact with the latest innovations in the industry brought about by the development of AI models and aims to inspire a vision of the future under the format of a conference.
+            </p>
+        </div>
+        <img id="about_image" src="images/about.jpg" alt="About AIIS">
+    </div>
+    <!-- Speakers Section -->
+    <div id="speakers">
+        <div class="speaker_card">
+            <img src="images/speaker1.jpg" class="speaker_image" alt="Speaker 1">
+            <h2 class="speaker_name">Speaker 1</h2>
+        </div>
+        <br>
+        <button id="speaker_button" type="button">More Info</button>
+    </div>
+    <!-- Schedule Section -->
+    <div id="schedule">
+        <div id="schedule_header">
+            <div id="schedule_day1">
+                <h2>Day 1</h2>
+                <h3>May 1, 2024</h3>
+                <h4>9:00 AM - 10:00 AM</h4>
+                <p>Opening Ceremony</p>
+                <h4>10:00 AM - 11:00 AM</h4>
+                <p>Keynote Speaker</p>
+                <h4>11:00 AM - 12:00 PM</h4>
+                <p>Panel Discussion</p>
+                <h4>12:00 PM - 1:00 PM</h4>
+                <p>Lunch</p>
+                <h4>1:00 PM - 2:00 PM</h4>
+                <p>Workshop</p>
+                <h4>2:00 PM - 3:00 PM</h4>
+                <p>Workshop</p>
+                <h4>3:00 PM - 4:00 PM</h4>
+                <p>Workshop</p>
+                <h4>4:00 PM - 5:00 PM</h4>
+                <p>Workshop</p>
+                <h4>5:00 PM - 6:00 PM</h4>
+                <p>Workshop</p>
+            </div>
+            <div id="schedule_day2">
+                <h2>Day 2</h2>
+                <h3>May 2, 2024</h3>
+                <h4>9:00 AM - 10:00 AM</h4>
+                <p>Opening Ceremony</p>
+                <h4>10:00 AM - 11:00 AM</h4>
+                <p>Keynote Speaker</p>
+                <h4>11:00 AM - 12:00 PM</h4>
+                <p>Panel Discussion</p>
+                <h4>12:00 PM - 1:00 PM</h4>
+                <p>Lunch</p>
+                <h4>1:00 PM - 2:00 PM</h4>
+                <p>Workshop</p>
+                <h4>2:00 PM - 3:00 PM</h4>
+                <p>Workshop</p>
+                <h4>3:00 PM - 4:00 PM</h4>
+                <p>Workshop</p>
+                <h4>4:00 PM - 5:00 PM</h4>
+                <p>Workshop</p>
+                <h4>5:00 PM - 6:00 PM</h4>
+                <p>Workshop</p>
+            </div>
+        </div>
+    </div>
+    <!-- Collaborators Section -->
+    <div id="collaborators">
+        <img src="images/collaborator1.jpg" class="collaborator_image" alt="Collaborator 1">
+        <img src="images/collaborator1.jpg" class="collaborator_image" alt="Collaborator 2">
+        <img src="images/collaborator1.jpg" class="collaborator_image" alt="Collaborator 3">
+        <img src="images/collaborator1.jpg" class="collaborator_image" alt="Collaborator 4">
+    </div>
+    <!-- Venue Section -->
+    <div id="venue">
+        <h2>The Venue</h2>
+        <h3>FULL ADDRESS:</h3>
+        <p>Strada Balta Albina 9, Bucuresti 032622</p>
+        <iframe 
+            id="venue_map" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2849.070219603389!2d26.153939915519768!3d44.42585977910212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1ff3f1d377ddb%3A0x79d4cf5316b369ef!2sStrada%20Balta%20Albina%209%2C%20Bucure%C8%99ti%20032622%2C%20Romania!5e0!3m2!1sen!2sro!4v1695487345534!5m2!1sen!2sro&maptype=satellite" 
+            allowfullscreen="" 
+            loading="fast" 
+            referrerpolicy="no-referrer-when-downgrade" 
+            title="Location Map">
+        </iframe>
+    </div>
+    <!-- Footer Section -->
+    <div id="footer">
+        <div id="contact">
+            <div id="contact_instagram">
+                <a href="https://www.instagram.com/aiis_conference/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/instagram-icon.webp" alt="Instagram" width="40" height="40">
+                </a>
+            </div>
+        </div>
+    </div> 
+    <!-- TODO: E o fucking bulina rosie in spatele logo-ului de la instagram nu stiu de unde e scapa de ea pls --!>
+</body>
+</html>
