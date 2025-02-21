@@ -13,141 +13,6 @@ html {
     padding: 0;
 }
 
-/* Floating Header */
-#header {
-    background-color: white;
-    opacity: 90%;
-    width: 80%; /* Adjusted width to make it narrower */
-    height: 88px;
-    border-radius: 20px;
-    position: fixed; /* Makes the header float */
-    top: 30px; /* Distance from the top of the page */
-    left: 50%; /* Move to the horizontal center */
-    transform: translateX(-50%); /* Center the header */
-    display: flex;
-    align-items: center;
-    padding: 0 20px;
-    justify-content: space-between;
-    z-index: 1000; /* Ensures the header stays above other content */
-    font-family: 'Exo 2', sans-serif;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Floating effect */
-}
-
-#header_logo {
-    height: 110px; /* Adjusted for better proportions */
-    margin-left: 20px; /* Consistent margin */
-}
-
-#header_about a{
-    color: red;
-}
-
-.header_links {
-    display: flex;
-    align-items: center;
-    gap: 20px; /* Space between links */
-    margin-right: 20px; /* Margin from the right edge */
-}
-
-.header_link {
-    font-size: 20px;
-    color: #444444;
-    text-decoration: none;
-    transition: color 0.4s ease; /* Smooth hover transition */
-}
-
-.header_link a:link{
-    text-decoration: none;
-    color: #444444;
-}
-
-.header_link a:visited{
-    text-decoration: none;
-    color: #444444;
-}
-
-.header_link:hover {
-    color: red; /* Hover effect */
-}
-
-/* Responsive Design for Header */
-@media (max-width: 768px) {
-    #header {
-        width: 90%; /* Wider on smaller screens */
-        height: auto;
-        flex-wrap: wrap;
-        padding: 10px;
-        top: 10px; /* Adjusted for smaller screens */
-    }
-
-    #header_logo {
-        height: 50px; /* Smaller logo for mobile */
-        margin-left: 10px;
-    }
-
-    .header_links {
-        gap: 10px; /* Reduced gap for smaller screens */
-        margin-right: 10px;
-    }
-
-    .header_link {
-        font-size: 16px; /* Smaller font size for mobile */
-    }
-}
-
-/* Sidebar Menu */
-#menu {
-    position: fixed;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding-right: 20px;
-    z-index: 1000;
-    font-family: 'Exo 2', sans-serif;
-}
-
-.menu_item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-    color: red;
-    cursor: pointer;
-}
-
-.menu_item a {
-    color: red;
-    text-decoration: none;
-    visibility: hidden;
-    font-size: 16px;
-    margin-right: 10px;
-}
-
-.menu_item:hover a {
-    visibility: visible;
-}
-
-.menu_item:hover .menu_circle {
-    background-color: red;
-}
-
-.menu_circle {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: black;
-    border-style: solid;
-    border-color: red;
-    border-width: 2.5px;
-    transition: background-color 0.3s ease;
-}
-
-.menu_circle:hover {
-    background-color: red;
-}
-
 /* Main Content */
 #main_text {
     margin-top: 400px; /* Adjusted for floating header */
@@ -167,24 +32,11 @@ html {
     margin-left: -5px;
 }
 
-#main_text h2 {
-    font-family: 'Alegreya Sans', sans-serif;
-    font-size: 24px;
-    margin-top: 0;
-    padding-left: 50px;
-}
-
 /* About Section */
 #about {
     padding: 20px;
     text-align: center;
     font-family: 'Alegreya Sans', sans-serif;
-}
-
-#about h1 {
-    font-family: 'Exo 2', sans-serif;
-    font-size: 36px;
-    margin-bottom: 10px;
 }
 
 #about h2 {
@@ -193,67 +45,17 @@ html {
     margin-top: 0;
 }
 
-#about_text {
-    border-radius: 20px;
-    background-color: rgba(255, 255, 255, 10%);
-    color: white;
-    width: 35%;
-    height: 100px;
-    text-align: justify;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    font-size: 20px;
-    margin-left: 20%;
-}
-
-#about_image {
-    max-width: 100%;
-    border-radius: 10px;
-    padding-top: 30px;
-}
-
 /* Speakers Section */
-#speakers {
+#speaker-page {
     padding: 20px;
     text-align: center;
     font-family: 'Alegreya Sans', sans-serif;
 }
 
-.speaker_card {
-    display: inline-block;
-    margin: 10px;
-    text-align: center;
-}
-
-.speaker_image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.speaker_name {
-    margin-top: 10px;
-    font-size: 18px;
-    font-family: 'Exo 2', sans-serif;
-}
-
-#speaker_button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: red;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-family: 'Exo 2', sans-serif;
-    font-size: 16px;
-}
-
-#speaker_button:hover {
-    background-color: darkred;
+#speaker-page h2 {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 24px;
+    margin-top: 0;
 }
 
 /* Schedule Section */
@@ -263,37 +65,10 @@ html {
     font-family: 'Alegreya Sans', sans-serif;
 }
 
-#schedule_header {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-#schedule_day1, #schedule_day2 {
-    width: 45%;
-    min-width: 300px;
-    margin: 10px;
-    font-family: 'Alegreya Sans', sans-serif;
-}
-
 #schedule h2 {
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Alegreya Sans', sans-serif;
     font-size: 24px;
-}
-
-#schedule h3 {
-    font-family: 'Alegreya Sans', sans-serif;
-    font-size: 20px;
-}
-
-#schedule h4 {
-    font-family: 'Exo 2', sans-serif;
-    font-size: 18px;
-}
-
-#schedule p {
-    font-family: 'Alegreya Sans', sans-serif;
-    font-size: 16px;
+    margin-top: 0;
 }
 
 /* Collaborators Section */
@@ -303,11 +78,10 @@ html {
     font-family: 'Alegreya Sans', sans-serif;
 }
 
-.collaborator_image {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    border-radius: 10px;
+#collaborators h2 {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 24px;
+    margin-top: 0;
 }
 
 /* Venue Section */
@@ -318,41 +92,7 @@ html {
 }
 
 #venue h2 {
-    font-family: 'Exo 2', sans-serif;
+    font-family: 'Alegreya Sans', sans-serif;
     font-size: 24px;
-}
-
-#venue h3 {
-    font-family: 'Alegreya Sans', sans-serif;
-    font-size: 20px;
-}
-
-#venue_map {
-    width: 80%;
-    height: 400px;
-    border-radius: 10px;
-    margin: 20px auto;
-}
-
-/* Footer Section */
-#footer {
-    padding: 20px;
-    text-align: center;
-    background-color: #222;
-    color: white;
-    margin-top: 50px;
-    font-family: 'Alegreya Sans', sans-serif;
-}
-
-#contact {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-#contact_instagram, #contact_email {
-    width: 40px;
-    height: 40px;
-    background-color: red;
-    border-radius: 50%;
+    margin-top: 0;
 }
