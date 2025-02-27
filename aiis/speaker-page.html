@@ -2,14 +2,45 @@
 <html>
 <head>
 	<title>Speaker Page</title>
-	<link rel="icon" href="images/favicon.svg?v1" sizes="any" type="image/svg+xml">
+	<link rel="icon" href="images/favicon.svg" sizes="any" type="image/svg+xml">
 	<link rel="stylesheet" href="style.css">
 </head>
-<body id="body">
-    <h1 id="title">Meet The Speakers</h1>
-    <div class="speaker_card">
-        <img src="images/speaker1.jpg" class="speaker_image">
-        <h2 class="speaker_name">Speaker 1</h2>
-        <p class="speaker_bio"></p>
+<body id="speaker_body">
+    <div class="logo" onclick="location.href='index.html'">
+        <img class="logo-img" src="images/icon_white.svg">
+        <p class="logo-text">Artificial Intelligence<br>Implementation Show</p>
+    </div>
+    <h1 id="speaker_title">Meet The Speakers</h1>
+    <div id="main_speaker_card">
+        <img id="main_speaker_image" src="images/temp_img.jpg">
+        <div id="main_speaker_text">
+            <img id="speaker_logo" src="images/logo_placeholder.jpg">
+            <div id="speaker_info">
+                <h1>Name Surname</h1>
+                <h2>Company Position</h2>
+            </div>
+            <p class="speaker_bio">Description<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis orci lorem, blandit vel molestie vitae, convallis at turpis. Vivamus ac elit vel dolor faucibus maximus. Ut non tempor metus. Nulla consectetur eros id congue vulputate. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        </div>
+    </div>
+    <h2 id="more_speakers_title">More Speakers</h2>
+    <div id="more_speakers_container">
+        <div class="speaker_card">
+            <img class="speaker_image" src="images/temp_img.jpg">
+            <h1 class="speaker_name">Name Surname</h1>
+            <h2 class="speaker_company">Company Position</h2>
+            <p>Learn More ></p>
+        </div>
+        <div class="speaker_card">
+            <img class="speaker_image" src="images/temp_img.jpg">
+            <h1 class="speaker_name">Name Surname</h1>
+            <h2 class="speaker_company">Company Position</h2>
+            <p>Learn More ></p>
+        </div>
+        <div class="speaker_card">
+            <img class="speaker_image" src="images/temp_img.jpg">
+            <h1 class="speaker_name">Name Surname</h1>
+            <h2 class="speaker_company">Company Position</h2>
+            <p>Learn More ></p>
+        </div>
     </div>
 </body>

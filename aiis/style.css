@@ -5,7 +5,7 @@ html {
     scroll-behavior: smooth;
 }
 
-#body {
+body {
     background-color: black;
     color: white;
     font-family: 'Alegreya Sans', sans-serif;
@@ -13,21 +13,41 @@ html {
     padding: 0;
 }
 
+p {
+    font-size: 18px;
+}
+
+h1 {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+h2 {
+    font-family: 'Exo 2', sans-serif;
+}
+
 /* Logo */
-#logo {
+.logo {
     height: 200px;
     display: flex;
     align-items: center;
+    margin-top: -30px;
 }
 
-#logo-img {
+.logo:hover {
+    cursor: pointer;
+}
+
+.logo-img {
     width: 200px;
+    margin-left: -40px;
+
 }
 
-#logo-text {
+.logo-text {
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 24px;
-    margin-left: 20px;
+    margin-left: -40px;
+
 }
 
 /* Main Content */
@@ -55,7 +75,7 @@ html {
     width: 100px;
     height: 100px;
     border-radius: 100px;
-    background-color: purple;
+    background-color: black;
     text-align: center;
     padding: 20px;
     margin: auto;
@@ -69,11 +89,15 @@ html {
     margin: auto;
 }
 
+.pages:hover {
+    cursor: pointer;
+}
+
 /* About Section */
 #about {
     top: 54.25%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(0deg) translate(350px) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(240deg) translate(350px) rotate(-240deg);
 }
 
 #about h2 {
@@ -85,7 +109,7 @@ html {
 #speaker-page {
     top: 54.25%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(60deg) translate(350px) rotate(-60deg);
+    transform: translate(-50%, -50%) rotate(300deg) translate(350px) rotate(-300deg);
 }
 
 #speaker-page h2 {
@@ -97,7 +121,7 @@ html {
 #schedule {
     top: 54.25%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(120deg) translate(350px) rotate(-120deg);
+    transform: translate(-50%, -50%) rotate(0deg) translate(350px) rotate(0deg);
 }
 
 #schedule h2 {
@@ -109,7 +133,7 @@ html {
 #collaborators {
     top: 54.25%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(180deg) translate(350px) rotate(-180deg);
+    transform: translate(-50%, -50%) rotate(60deg) translate(350px) rotate(-60deg);
 }
 
 #collaborators h2 {
@@ -121,7 +145,7 @@ html {
 #venue {
     top: 54.25%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(240deg) translate(350px) rotate(-240deg);
+    transform: translate(-50%, -50%) rotate(120deg) translate(350px) rotate(-120deg);
 }
 
 #venue h2 {
@@ -133,10 +157,158 @@ html {
 #team-page {
     top: 54.25%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(300deg) translate(350px) rotate(-300deg);
+    transform: translate(-50%, -50%) rotate(180deg) translate(350px) rotate(-180deg);
 }
 
 #team-page h2 {
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 24px;
+}
+
+/* Speaker Page */
+#speaker_body {
+    background-color: rgb(27, 9, 125);
+}
+
+#speaker_title {
+    font-size: 100px;
+    margin-top: -50px;
+    text-align: center;
+}
+
+#main_speaker_card {
+    display: flex;
+    justify-content: center;
+}
+
+#main_speaker_image {
+    height: 400px;
+    border-radius: 200px;
+    margin-left: 0;
+    margin-right: 10vw;
+}
+
+#speaker_logo {
+    height: 80px;
+    float: inline-end;
+    margin-top: 50px;
+    margin-right: 100px;
+}
+
+#main_speaker_text {
+    width: 30vw;
+    text-align: justify;
+}
+
+#main_speaker_text h1 {
+    font-size: 54px;
+    font-weight: 800;
+}
+
+#main_speaker_text h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: -40px;
+}
+
+#main_speaker_text p {
+    font-size: 20px;
+}
+
+#more_speakers_title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+#more_speakers_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.speaker_card {
+    background-color: #6B717E;
+    width: 300px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.speaker_card h1 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.speaker_card h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.speaker_card p {
+    margin-left: 20px;
+}
+
+.speaker_image {
+    width: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* Team Page */
+#team_body {
+    background-color: rgb(27, 9, 125);
+}
+
+#team_wrapper {
+    display: flex;
+}
+
+#team_text {
+    width: 20%;
+    padding: 20px;
+}
+
+#team_container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20vw;
+    margin-top: -100px;
+}
+
+#team_title {
+    font-size: 54px;
+    font-weight: 400;
+    text-align: center;
+}
+
+#team_info {
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.team_card {
+    margin-bottom: -10px;
+}
+
+.team_image {
+    width: 200px;
+    border-radius: 20px;
+}
+
+/* Venue Page */
+#venue_map {
+    width: 80%;
+    height: 80vh;
+    margin-left: 10%;
 }
