@@ -13,86 +13,130 @@ html {
     padding: 0;
 }
 
+/* Logo */
+#logo {
+    height: 200px;
+    display: flex;
+    align-items: center;
+}
+
+#logo-img {
+    width: 200px;
+}
+
+#logo-text {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 24px;
+    margin-left: 20px;
+}
+
 /* Main Content */
 #main_text {
-    margin-top: 400px; /* Adjusted for floating header */
-    text-align: left;
-    margin-left: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Full viewport height */
+    text-align: center;
     color: white;
     font-family: 'Alegreya Sans', sans-serif;
-    margin-bottom: 50%;
-    border-left: 5px solid white; /* Add white border to the left */
+    margin: 0;
+    position: relative;
 }
 
 #main_text h1 {
     font-family: 'Exo 2', sans-serif;
     font-size: 200px;
-    margin-top: -40px;
-    margin-bottom: 20px;
-    margin-left: -5px;
+    margin-top: 0;
+}
+
+/* Pages */
+.pages {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: purple;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.pages-text {
+    margin: auto;
 }
 
 /* About Section */
 #about {
-    padding: 20px;
-    text-align: center;
-    font-family: 'Alegreya Sans', sans-serif;
+    top: 54.25%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg) translate(350px) rotate(0deg);
 }
 
 #about h2 {
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 24px;
-    margin-top: 0;
 }
 
 /* Speakers Section */
 #speaker-page {
-    padding: 20px;
-    text-align: center;
-    font-family: 'Alegreya Sans', sans-serif;
+    top: 54.25%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(60deg) translate(350px) rotate(-60deg);
 }
 
 #speaker-page h2 {
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 24px;
-    margin-top: 0;
 }
 
 /* Schedule Section */
 #schedule {
-    padding: 20px;
-    text-align: center;
-    font-family: 'Alegreya Sans', sans-serif;
+    top: 54.25%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(120deg) translate(350px) rotate(-120deg);
 }
 
 #schedule h2 {
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 24px;
-    margin-top: 0;
 }
 
 /* Collaborators Section */
 #collaborators {
-    padding: 20px;
-    text-align: center;
-    font-family: 'Alegreya Sans', sans-serif;
+    top: 54.25%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(180deg) translate(350px) rotate(-180deg);
 }
 
 #collaborators h2 {
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 24px;
-    margin-top: 0;
 }
 
 /* Venue Section */
 #venue {
-    padding: 20px;
-    text-align: center;
-    font-family: 'Alegreya Sans', sans-serif;
+    top: 54.25%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(240deg) translate(350px) rotate(-240deg);
 }
 
 #venue h2 {
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 24px;
-    margin-top: 0;
+}
+
+/* Team Section */
+#team-page {
+    top: 54.25%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(300deg) translate(350px) rotate(-300deg);
+}
+
+#team-page h2 {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 24px;
 }
