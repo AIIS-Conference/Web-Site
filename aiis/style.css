@@ -97,7 +97,7 @@ h2 {
 #about {
     top: 54.25%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(240deg) translate(350px) rotate(-240deg);
+    transform: translate(-50%, -50%) rotate(202.5deg) translate(350px) rotate(-202.5deg);
 }
 
 #about h2 {
@@ -109,7 +109,7 @@ h2 {
 #speaker-page {
     top: 54.25%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(300deg) translate(350px) rotate(-300deg);
+    transform: translate(-50%, -50%) rotate(247.5deg) translate(350px) rotate(-247.5deg);
 }
 
 #speaker-page h2 {
@@ -121,7 +121,7 @@ h2 {
 #schedule {
     top: 54.25%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(0deg) translate(350px) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(292.5deg) translate(350px) rotate(-292.5deg);
 }
 
 #schedule h2 {
@@ -133,7 +133,7 @@ h2 {
 #collaborators {
     top: 54.25%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(60deg) translate(350px) rotate(-60deg);
+    transform: translate(-50%, -50%) rotate(337.5deg) translate(350px) rotate(-337.5deg);
 }
 
 #collaborators h2 {
@@ -145,7 +145,7 @@ h2 {
 #venue {
     top: 54.25%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(120deg) translate(350px) rotate(-120deg);
+    transform: translate(-50%, -50%) rotate(22.5deg) translate(350px) rotate(-22.5deg);
 }
 
 #venue h2 {
@@ -157,10 +157,34 @@ h2 {
 #team-page {
     top: 54.25%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(180deg) translate(350px) rotate(-180deg);
+    transform: translate(-50%, -50%) rotate(67.5deg) translate(350px) rotate(-67.5deg);
 }
 
 #team-page h2 {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 24px;
+}
+
+/* Previous Edition Section */
+#previous-edition {
+    top: 54.25%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(112.5deg) translate(350px) rotate(-112.5deg);
+}
+
+#previous-edition h2 {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 24px;
+}
+
+/* Ticket Section */
+#ticket-page {
+    top: 54.25%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(157.5deg) translate(350px) rotate(-157.5deg);
+}
+
+#ticket-page h2 {
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 24px;
 }
@@ -255,6 +279,15 @@ h2 {
     margin-left: 20px;
 }
 
+.speaker_card .speaker_description {
+    font-size: 0px;
+    visibility: hidden;
+}
+
+.speaker_card:hover {
+    cursor: pointer;
+}
+
 .speaker_image {
     width: 300px;
     border-top-left-radius: 20px;
@@ -281,7 +314,7 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20vw;
+    gap: 50px;
     margin-top: -100px;
 }
 
@@ -304,6 +337,14 @@ h2 {
 .team_image {
     width: 200px;
     border-radius: 20px;
+}
+
+.team_background {
+    width: 320px;
+    height: 200px;
+    border-radius: 20px;
+    background: linear-gradient(to right, #4911a0, #330d90, #4911a0);
+    border: 2px solid #e29eff;
 }
 
 /* Venue Page */
