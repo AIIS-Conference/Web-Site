@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    background-color: black;
+    background-color: rgb(27, 9, 125);
     color: white;
     font-family: 'Alegreya Sans', sans-serif;
     margin: 0;
@@ -31,6 +31,7 @@ h2 {
     display: flex;
     align-items: center;
     margin-top: -30px;
+    width: max-content;
 }
 
 .logo:hover {
@@ -51,6 +52,10 @@ h2 {
 }
 
 /* Main Content */
+#main_body {
+    background-color: black;
+}
+
 #main_text {
     display: flex;
     flex-direction: column;
@@ -97,7 +102,7 @@ h2 {
 #about {
     top: 54.25%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(202.5deg) translate(350px) rotate(-202.5deg);
+    transform: translate(-50%, -50%) rotate(240deg) translate(350px) rotate(-240deg);
 }
 
 #about h2 {
@@ -109,7 +114,7 @@ h2 {
 #speaker-page {
     top: 54.25%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(247.5deg) translate(350px) rotate(-247.5deg);
+    transform: translate(-50%, -50%) rotate(300deg) translate(350px) rotate(-300deg);
 }
 
 #speaker-page h2 {
@@ -121,22 +126,10 @@ h2 {
 #schedule {
     top: 54.25%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(292.5deg) translate(350px) rotate(-292.5deg);
+    transform: translate(-50%, -50%) rotate(0deg) translate(350px) rotate(0deg);
 }
 
 #schedule h2 {
-    font-family: 'Alegreya Sans', sans-serif;
-    font-size: 24px;
-}
-
-/* Collaborators Section */
-#collaborators {
-    top: 54.25%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(337.5deg) translate(350px) rotate(-337.5deg);
-}
-
-#collaborators h2 {
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 24px;
 }
@@ -145,7 +138,7 @@ h2 {
 #venue {
     top: 54.25%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(22.5deg) translate(350px) rotate(-22.5deg);
+    transform: translate(-50%, -50%) rotate(60deg) translate(350px) rotate(-60deg);
 }
 
 #venue h2 {
@@ -157,7 +150,7 @@ h2 {
 #team-page {
     top: 54.25%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(67.5deg) translate(350px) rotate(-67.5deg);
+    transform: translate(-50%, -50%) rotate(120deg) translate(350px) rotate(-120deg);
 }
 
 #team-page h2 {
@@ -169,7 +162,7 @@ h2 {
 #previous-edition {
     top: 54.25%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(112.5deg) translate(350px) rotate(-112.5deg);
+    transform: translate(-50%, -50%) rotate(180deg) translate(350px) rotate(-180deg);
 }
 
 #previous-edition h2 {
@@ -179,21 +172,27 @@ h2 {
 
 /* Ticket Section */
 #ticket-page {
-    top: 54.25%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(157.5deg) translate(350px) rotate(-157.5deg);
+    width: 150px;
+    height: 45px;
+    background-color: rgb(27, 9, 125);
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: -280px auto;
+    cursor: pointer;
 }
 
 #ticket-page h2 {
     font-family: 'Alegreya Sans', sans-serif;
     font-size: 24px;
+    margin: 0;
+    line-height: 45px;
 }
 
 /* Speaker Page */
-#speaker_body {
-    background-color: rgb(27, 9, 125);
-}
-
 #speaker_title {
     font-size: 100px;
     margin-top: -50px;
@@ -203,6 +202,9 @@ h2 {
 #main_speaker_card {
     display: flex;
     justify-content: center;
+    /* on start */
+    visibility: hidden;
+    height: 0;
 }
 
 #main_speaker_image {
@@ -245,20 +247,23 @@ h2 {
     font-weight: 400;
     margin-top: 50px;
     padding-bottom: 50px;
+    /* on start */
+    visibility: hidden;
+    height: 0;
 }
 
 #more_speakers_container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: -150px;
 }
 
 .speaker_card {
     background-color: #6B717E;
     width: 300px;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     margin-right: 50px;
     margin-left: 50px;
 }
@@ -295,10 +300,6 @@ h2 {
 }
 
 /* Team Page */
-#team_body {
-    background-color: rgb(27, 9, 125);
-}
-
 #team_wrapper {
     display: flex;
 }
@@ -352,4 +353,69 @@ h2 {
     width: 80%;
     height: 80vh;
     margin-left: 10%;
+}
+
+#venue_title {
+    font-size: 54px;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 800;
+    text-align: center;
+}
+
+#venue_text {
+    margin-left: 150px;
+}
+
+/* Schedule Page */
+#schedule_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+#schedule_title {
+    font-size: 54px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#schedule_header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.schedule_day {
+    background-color: #6B717E;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    width: 500px;
+    text-align: center;
+}
+
+.schedule_day h2, .schedule_day h3, .schedule_day h4, .schedule_day p {
+    margin: 10px 0;
+}
+
+.schedule_day h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.schedule_day h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.schedule_day h4 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.schedule_day p {
+    font-size: 18px;
+    font-weight: 400;
 }

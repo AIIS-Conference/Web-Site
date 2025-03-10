@@ -22,37 +22,49 @@ function eraseCookie(name) {
 
 document.addEventListener("DOMContentLoaded", function() {
     const speakerCards = document.querySelectorAll(".speaker_card");
+    const mainSpeakerCard = document.getElementById("main_speaker_card");
     const mainSpeakerImage = document.getElementById("main_speaker_image");
     const mainSpeakerName = document.getElementById("main_speaker_name");
     const mainSpeakerCompany = document.getElementById("main_speaker_company");
     const mainSpeakerDescription = document.getElementById("main_speaker_description");
-
+    const moreSpeakersTitle = document.getElementById("more_speakers_title");
+    const moreSpeakersContainer = document.getElementById("more_speakers_container");
+    let mainSpeakerSelected = false;
+    let previousSpeakerImage = null;
+    
     speakerCards.forEach(card => {
         card.addEventListener("click", function() {
-            const speakerImage = card.querySelector(".speaker_image");
-            const speakerName = card.querySelector(".speaker_name");
-            const speakerCompany = card.querySelector(".speaker_company");
-            const speakerDescription = card.querySelector(".speaker_description");
+            const distanceToBottom = document.body.scrollHeight - window.innerHeight - window.scrollY;
 
-            // Swap images
-            const tempImageSrc = mainSpeakerImage.src;
-            mainSpeakerImage.src = speakerImage.src;
-            speakerImage.src = tempImageSrc;
+            if (!mainSpeakerSelected) {
+                mainSpeakerSelected = true;
+                mainSpeakerCard.style.visibility = "visible";
+                mainSpeakerCard.style.height = "auto";
+                moreSpeakersTitle.style.visibility = "visible";
+                moreSpeakersTitle.style.height = "auto";
+                moreSpeakersContainer.style.marginTop = "20px";
 
-            // Swap names
-            const tempName = mainSpeakerName.textContent;
-            mainSpeakerName.textContent = speakerName.textContent;
-            speakerName.textContent = tempName;
+                // Scroll to the same distance from the bottom
+                window.scrollTo({ top: document.body.scrollHeight - window.innerHeight - distanceToBottom, behavior: 'instant' });
+                setTimeout(() => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }, 100);
+            } else {
+                // Restore the previous speaker image
+                previousSpeakerImage.src = previousSpeakerImage.dataset.originalSrc;
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
 
-            // Swap companies
-            const tempCompany = mainSpeakerCompany.textContent;
-            mainSpeakerCompany.textContent = speakerCompany.textContent;
-            speakerCompany.textContent = tempCompany;
+            // Store the current speaker image
+            previousSpeakerImage = card.querySelector("img");
+            previousSpeakerImage.dataset.originalSrc = previousSpeakerImage.src;
+            previousSpeakerImage.src = "images/speakers/gray.jpg";
 
-            // Swap descriptions
-            const tempDescription = mainSpeakerDescription.textContent;
-            mainSpeakerDescription.textContent = speakerDescription.textContent;
-            speakerDescription.textContent = tempDescription;
+            // Update main speaker details here
+            mainSpeakerImage.src = card.querySelector("img").dataset.originalSrc;
+            mainSpeakerName.textContent = card.querySelector(".speaker_name").textContent;
+            mainSpeakerCompany.textContent = card.querySelector(".speaker_company").textContent;
+            mainSpeakerDescription.textContent = card.querySelector(".speaker_description").textContent;
         });
     });
 });
