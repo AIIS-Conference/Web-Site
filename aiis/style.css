@@ -27,11 +27,13 @@ h2 {
 
 /* Logo */
 .logo {
-    height: 200px;
+    height: min-content;
     display: flex;
     align-items: center;
     margin-top: -30px;
     width: max-content;
+    top: 0;
+    left: 0;
 }
 
 .logo:hover {
@@ -52,27 +54,30 @@ h2 {
 }
 
 /* Main Content */
-#main_body {
-    background-color: black;
+#index_logo {
+    top: 0;
+    left: 0;
+    position: absolute;
 }
 
-#main_text {
+#main_body {
+    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh; /* Full viewport height */
-    text-align: center;
+    height: 100vh;
+}
+
+#main_text {
     color: white;
-    font-family: 'Alegreya Sans', sans-serif;
-    margin: 0;
-    position: relative;
+    text-align: center;
+    position: absolute;
 }
 
 #main_text h1 {
     font-family: 'Exo 2', sans-serif;
     font-size: 200px;
-    margin-top: 0;
 }
 
 /* Pages */
@@ -100,7 +105,7 @@ h2 {
 
 /* About Section */
 #about {
-    top: 54.25%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(240deg) translate(350px) rotate(-240deg);
 }
@@ -112,7 +117,7 @@ h2 {
 
 /* Speakers Section */
 #speaker-page {
-    top: 54.25%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(300deg) translate(350px) rotate(-300deg);
 }
@@ -124,7 +129,7 @@ h2 {
 
 /* Schedule Section */
 #schedule {
-    top: 54.25%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(0deg) translate(350px) rotate(0deg);
 }
@@ -136,7 +141,7 @@ h2 {
 
 /* Venue Section */
 #venue {
-    top: 54.25%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(60deg) translate(350px) rotate(-60deg);
 }
@@ -148,7 +153,7 @@ h2 {
 
 /* Team Section */
 #team-page {
-    top: 54.25%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(120deg) translate(350px) rotate(-120deg);
 }
@@ -160,7 +165,7 @@ h2 {
 
 /* Previous Edition Section */
 #previous-edition {
-    top: 54.25%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(180deg) translate(350px) rotate(-180deg);
 }
@@ -181,7 +186,7 @@ h2 {
     justify-content: center;
     align-items: center;
     position: relative;
-    margin: -35vh auto;
+    margin-top: max(30vh, 250px);
     cursor: pointer;
 }
 
@@ -302,21 +307,35 @@ h2 {
 /* Team Page */
 #team_wrapper {
     display: flex;
+    align-items: center;
+    height: 80vh;
 }
 
 #team_text {
     width: 20%;
-    padding: 20px;
+    margin-left: 20px;
+    margin-top: -150px;
 }
 
 #team_container {
+    margin-left: 100px;
     width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     margin-top: -100px;
+}
+
+@media (max-width: 1500px) {
+    #team_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1000px) {
+    #team_container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 #team_title {
@@ -332,7 +351,7 @@ h2 {
 }
 
 .team_card {
-    margin-bottom: -10px;
+    margin: 0px;
 }
 
 .team_image {
@@ -353,6 +372,7 @@ h2 {
     width: 80%;
     height: 80vh;
     margin-left: 10%;
+    margin-bottom: 50px;
 }
 
 #venue_title {
@@ -421,12 +441,25 @@ h2 {
 }
 
 /* About Page */
-#about_title{
+#about_body {
+    background: linear-gradient(to right, rgb(7, 1, 47), rgb(30, 15, 96));
+}
+
+#about_title {
     width: max-content;
     height: max-content;
-    border-left: 10px solid rgb(86, 1, 157);
     padding-left: 10px;
     margin-left: 70px;
+    margin-top: 0px;
+}
+
+#about_title_line {
+    width: 10px;
+    height: 300px;
+    background-color: rgb(86, 1, 157);
+    float: left;
+    margin-left: -20px;
+    border-radius: 5px;
 }
 
 #about_title h2 {
@@ -445,7 +478,7 @@ h2 {
     height: 300px;
     padding: 20px;
     clip-path: polygon(5% 0%, 95% 0%, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0% 90%, 0% 10%);
-    margin: 20px 20px;
+    margin: 50px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -470,35 +503,64 @@ h2 {
 
 .about_handle {
     background-color: rgb(86, 1, 157);
-    width: 20px;
-    height: 100px;
+    width: 25px;
+    height: 110px;
     position: absolute;
     z-index: 2;
     clip-path: polygon(0% 0%, 45% 0%, 100% 15%, 100% 85%, 45% 100%, 0% 100%);
 }
 
 #about_handle_left {
-    left: 15px;
+    left: 14px;
 }
 
 #about_handle_right {
-    left: 545px;
+    left: 541px;
     transform: scaleX(-1);
 }
 
 #contact-us {
     position: absolute;
     top: 100px;
-    right: 100px;
+    right: 125px;
     font-size: 80px;
     font-weight: 800;
 }
 
 #media_container {
-    background-color: black;
-    width: 500px;
-    height: 800px;
+    background-color: rgb(36, 28, 113);
+    width: 550px;
+    height: max-content;
     position: absolute;
-    top: 300px;
+    top: 280px;
     right: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.media {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    margin-left: 50px;
+    height: min-content;
+}
+
+.media:hover {
+    cursor: pointer;
+}
+
+.contact_icon {
+    width: 100px;
+    height: 100px;
+}
+
+.contact_text {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    padding-left: 20px;
 }

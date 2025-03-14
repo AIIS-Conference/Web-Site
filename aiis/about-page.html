@@ -9,11 +9,12 @@
 </head>
 <body id="about_body">
     <script src="script.js"></script>
-    <div class="logo">
+    <div class="logo" onclick="location.href='index.html'">
         <img class="logo-img" src="images/icon_white.svg">
         <p class="logo-text">Artificial Intelligence<br>Implementation Show</p>
     </div>
     <div id="about_title">
+        <div id="about_title_line"></div>
         <h2>About</h2>
         <h1>AIIS</h1>
         <h1>June 2025</h1>
@@ -30,7 +31,26 @@
     </div>
     <h1 id="contact-us">CONTACT US</h1>
     <div id="media_container">
-        <!-- Media content goes here -->
+        <div id="instagram" class="media" onclick="location.href='https://www.instagram.com/aiis_conference/'">
+            <img class="contact_icon" src="images/icons/instagram.svg">
+            <p class="contact_text">@aiis_conference</p>
+        </div>
+        <div id="linkedin" class="media" onclick="location.href='https://www.linkedin.com/company/aiis-conference/'">
+            <img class="contact_icon" src="images/icons/linkedin.svg">
+            <p class="contact_text">AIIS Conference</p>
+        </div>
+        <div id="github" class="media" onclick="location.href='https://github.com/AIIS-Conference'">
+            <img class="contact_icon" src="images/icons/github.svg">
+            <p class="contact_text">AIIS-Conference</p>
+        </div>
+        <div id="linktree" class="media" onclick="location.href='https://linktr.ee/aiishow'">
+            <img class="contact_icon" src="images/icons/linktree.svg">
+            <p class="contact_text">aiishow</p>
+        </div>
+        <div id="email" class="media" onclick="location.href='mailto:contact@aiishow.com'">
+            <img class="contact_icon" src="images/icons/email.svg">
+            <p class="contact_text">contact@aiishow.com</p>
+        </div>
     </div>
 </body>
 </html>
