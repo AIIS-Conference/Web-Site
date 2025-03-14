@@ -528,11 +528,21 @@ h2 {
 }
 
 #media_container {
-    background-color: rgb(36, 28, 113);
-    width: 550px;
-    height: max-content;
+    background-image: url('images/icons/media_container.svg');
+    clip-path: polygon(
+        25% 0%, 74% 0%, /* Top side */
+        100% 12.5%, 100% 87%, /* Right side */
+        75% 100%, 25% 100%, /* Bottom side */
+        0% 87%, 0% 12.5% /* Left side */
+    );
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    height: min-content;
+    height: 1150px;
     position: absolute;
-    top: 280px;
+    top: 200px;
     right: 55px;
     display: flex;
     flex-direction: column;
@@ -545,7 +555,7 @@ h2 {
     align-items: center;
     margin-top: 20px;
     width: 100%;
-    margin-left: 50px;
+    margin-left: 100px;
     height: min-content;
 }
 
