@@ -531,3 +531,12 @@ html {
     background-color: red;
     border-radius: 50%;
 }
+
+Media Container:
+
+clip-path: polygon(
+        25% 0%, 74% 0%, /* Top side */
+        100% 12.5%, 100% 87%, /* Right side */
+        75% 100%, 25% 100%, /* Bottom side */
+        0% 87%, 0% 12.5% /* Left side */
+    );

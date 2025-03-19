@@ -14,6 +14,7 @@ body {
 }
 
 p {
+    font-family: 'Exo 2', sans-serif;
     font-size: 18px;
 }
 
@@ -47,7 +48,6 @@ h2 {
 }
 
 .logo-text {
-    font-family: 'Alegreya Sans', sans-serif;
     font-size: 24px;
     margin-left: -40px;
 
@@ -82,7 +82,7 @@ h2 {
 }
 
 .button:after {
-    border: 4px solid rgb(86, 1, 157);
+    border: 4px solid rgb(226, 158, 255);
     transform: scale(1.3);
     transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     opacity: 0;
@@ -250,7 +250,7 @@ h2 {
 #ticket-page {
     width: 150px;
     height: 45px;
-    background-color: rgb(27, 9, 125);
+    background-color: rgb(86, 1, 157);
     text-align: center;
     border-radius: 20px;
     display: flex;
@@ -416,6 +416,7 @@ h2 {
 }
 
 #team_info {
+    font-size: 16px;
     text-align: justify;
     margin-left: 20px;
     margin-right: 20px;
@@ -554,14 +555,14 @@ h2 {
     justify-content: center;
     align-items: center;
     text-align: justify;
-    position: relative; /* Add this line */
-    z-index: 1; /* Add this line */
+    position: relative;
+    z-index: 1;
 }
 
 #about_text p {
     margin: 0;
     padding: 20px;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .about_container {
@@ -599,22 +600,15 @@ h2 {
 }
 
 #media_container {
-    background-image: url('images/icons/media_container.svg');
-    clip-path: polygon(
-        25% 0%, 74% 0%, /* Top side */
-        100% 12.5%, 100% 87%, /* Right side */
-        75% 100%, 25% 100%, /* Bottom side */
-        0% 87%, 0% 12.5% /* Left side */
-    );
+    background-image: url('images/icons/media_container.svg');   
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     padding: 20px;
-    height: min-content;
     height: 1150px;
     position: absolute;
-    top: 200px;
-    right: 55px;
+    top: 140px;
+    right: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -635,13 +629,13 @@ h2 {
 }
 
 .contact_icon {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
 }
 
 .contact_text {
     color: white;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 30px;
     padding-left: 20px;
 }
