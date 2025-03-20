@@ -14,7 +14,6 @@ body {
 }
 
 p {
-    font-family: 'Exo 2', sans-serif;
     font-size: 18px;
 }
 
@@ -44,84 +43,12 @@ h2 {
 .logo-img {
     width: 200px;
     margin-left: -40px;
-
 }
 
 .logo-text {
+    font-family: 'Alegreya Sans', sans-serif;
     font-size: 24px;
     margin-left: -40px;
-
-}
-
-/* Back Button */
-.button {
-    display: block;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    width: 56px;
-    height: 56px;
-    overflow: hidden;
-    outline: none;
-    background-color: transparent;
-    cursor: pointer;
-    border: 0;
-}
-
-.button:before,
-.button:after {
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-    inset: 7px;
-}
-
-.button:before {
-    border: 4px solid #f0eeef;
-    transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms, transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
-}
-
-.button:after {
-    border: 4px solid rgb(226, 158, 255);
-    transform: scale(1.3);
-    transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    opacity: 0;
-}
-
-.button:hover:before,
-.button:focus:before {
-    opacity: 0;
-    transform: scale(0.7);
-    transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.button:hover:after,
-.button:focus:after {
-    opacity: 1;
-    transform: scale(1);
-    transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms, transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
-}
-
-.button-box {
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.button-elem {
-    display: block;
-    width: 20px;
-    height: 20px;
-    margin: 17px 18px 0 18px;
-    transform: rotate(180deg);
-    fill: #f0eeef;
-}
-
-.button:hover .button-box,
-.button:focus .button-box {
-    transition: 0.4s;
-    transform: translateX(-56px);
 }
 
 /* Main Content */
@@ -250,7 +177,7 @@ h2 {
 #ticket-page {
     width: 150px;
     height: 45px;
-    background-color: rgb(86, 1, 157);
+    background-color: rgb(27, 9, 125);
     text-align: center;
     border-radius: 20px;
     display: flex;
@@ -278,7 +205,6 @@ h2 {
 #main_speaker_card {
     display: flex;
     justify-content: center;
-    /* on start */
     visibility: hidden;
     height: 0;
 }
@@ -323,7 +249,6 @@ h2 {
     font-weight: 400;
     margin-top: 50px;
     padding-bottom: 50px;
-    /* on start */
     visibility: hidden;
     height: 0;
 }
@@ -397,18 +322,6 @@ h2 {
     margin-top: -100px;
 }
 
-@media (max-width: 1500px) {
-    #team_container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 1000px) {
-    #team_container {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
 #team_title {
     font-size: 54px;
     font-weight: 400;
@@ -416,7 +329,6 @@ h2 {
 }
 
 #team_info {
-    font-size: 16px;
     text-align: justify;
     margin-left: 20px;
     margin-right: 20px;
@@ -473,12 +385,6 @@ h2 {
     margin-bottom: 20px;
 }
 
-#schedule_header {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
 .schedule_day {
     background-color: #6B717E;
     border-radius: 20px;
@@ -486,10 +392,6 @@ h2 {
     margin: 20px;
     width: 500px;
     text-align: center;
-}
-
-.schedule_day h2, .schedule_day h3, .schedule_day h4, .schedule_day p {
-    margin: 10px 0;
 }
 
 .schedule_day h2 {
@@ -562,7 +464,7 @@ h2 {
 #about_text p {
     margin: 0;
     padding: 20px;
-    font-size: 24px;
+    font-size: 30px;
 }
 
 .about_container {
@@ -600,15 +502,22 @@ h2 {
 }
 
 #media_container {
-    background-image: url('images/icons/media_container.svg');   
+    background-image: url('images/icons/media_container.svg');
+    clip-path: polygon(
+        25% 0%, 74% 0%, /* Top side */
+        100% 12.5%, 100% 87%, /* Right side */
+        75% 100%, 25% 100%, /* Bottom side */
+        0% 87%, 0% 12.5% /* Left side */
+    );
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     padding: 20px;
+    height: min-content;
     height: 1150px;
     position: absolute;
-    top: 140px;
-    right: 60px;
+    top: 200px;
+    right: 55px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -629,13 +538,265 @@ h2 {
 }
 
 .contact_icon {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
 }
 
 .contact_text {
     color: white;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 40px;
     padding-left: 20px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    /* Logo */
+    .logo-img {
+        width: 150px;
+        margin-left: -20px;
+    }
+
+    .logo-text {
+        font-size: 18px;
+        margin-left: -20px;
+    }
+
+    /* Main Content */
+    #main_text h1 {
+        font-size: 100px;
+    }
+
+    /* Pages */
+    .pages {
+        width: 80px;
+        height: 80px;
+        border-radius: 80px;
+        padding: 15px;
+    }
+
+    /* Speaker Page */
+    #speaker_title {
+        font-size: 60px;
+        margin-top: -30px;
+    }
+
+    #main_speaker_card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main_speaker_image {
+        height: 200px;
+        border-radius: 100px;
+        margin: 20px 0;
+    }
+
+    #speaker_logo {
+        height: 60px;
+        margin-top: 20px;
+        margin-right: 0;
+    }
+
+    #main_speaker_text {
+        width: 80%;
+        text-align: center;
+    }
+
+    #main_speaker_text h1 {
+        font-size: 36px;
+    }
+
+    #main_speaker_text h2 {
+        font-size: 24px;
+        margin-top: -20px;
+    }
+
+    #main_speaker_text p {
+        font-size: 18px;
+    }
+
+    #more_speakers_title {
+        font-size: 24px;
+        margin-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    #more_speakers_container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -100px;
+    }
+
+    .speaker_card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .speaker_card h1 {
+        font-size: 24px;
+    }
+
+    .speaker_card h2 {
+        font-size: 18px;
+    }
+
+    .speaker_card p {
+        margin: 10px 0;
+    }
+
+    .speaker_image {
+        width: 100%;
+    }
+
+    /* Team Page */
+    #team_wrapper {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    #team_text {
+        width: 80%;
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    #team_container {
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 20px;
+    }
+
+    #team_title {
+        font-size: 36px;
+    }
+
+    #team_info {
+        margin: 20px 0;
+    }
+
+    .team_image {
+        width: 150px;
+    }
+
+    .team_background {
+        width: 100%;
+        height: 150px;
+    }
+
+    /* Venue Page */
+    #venue_map {
+        width: 90%;
+        height: 50vh;
+        margin: 20px auto;
+    }
+
+    #venue_title {
+        font-size: 36px;
+    }
+
+    #venue_text {
+        margin: 20px;
+        text-align: center;
+    }
+
+    /* Schedule Page */
+    #schedule_wrapper {
+        padding: 20px;
+    }
+
+    #schedule_title {
+        font-size: 36px;
+    }
+
+    .schedule_day {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    .schedule_day h2 {
+        font-size: 24px;
+    }
+
+    .schedule_day h3 {
+        font-size: 20px;
+    }
+
+    .schedule_day h4 {
+        font-size: 18px;
+    }
+
+    .schedule_day p {
+        font-size: 16px;
+    }
+
+    /* About Page */
+    #about_title {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #about_title_line {
+        display: none;
+    }
+
+    #about_title h2 {
+        font-size: 24px;
+    }
+
+    #about_title h1 {
+        font-size: 48px;
+    }
+
+    #about_text {
+        width: 90%;
+        height: auto;
+        clip-path: none;
+        margin: 20px auto;
+    }
+
+    #about_text p {
+        font-size: 18px;
+    }
+
+    .about_container {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .about_handle {
+        display: none;
+    }
+
+    #contact-us {
+        position: static;
+        font-size: 36px;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    #media_container {
+        background-image: none;
+        clip-path: none;
+        padding: 20px;
+        height: auto;
+        position: static;
+    }
+
+    .media {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .contact_icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .contact_text {
+        font-size: 18px;
+        padding-left: 10px;
+    }
 }
