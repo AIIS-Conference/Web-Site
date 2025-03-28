@@ -600,14 +600,20 @@ h2 {
 }
 
 #media_container {
-    background-image: url('images/icons/media_container.svg');   
+    background-image: url('images/icons/media_container.svg');
+    clip-path: polygon(
+        0% 0%, 85.24% 0%, /* Top side */
+        100% 8%, 100% 91.5%, /* Right side */
+        85.24% 100%, 15% 100%, /* Bottom side */
+        0% 91.5%, 0% 30% /* Left side */
+    );
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     padding: 20px;
-    height: 1150px;
+    height: 900px;
     position: absolute;
-    top: 140px;
+    top: 250px;
     right: 60px;
     display: flex;
     flex-direction: column;
