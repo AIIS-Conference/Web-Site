@@ -646,6 +646,24 @@ h2 {
     padding-left: 20px;
 }
 
+.collaborator {
+    width: 200px;
+    padding: 20px;
+}
+
+#collaborators_container {
+    background-color: rgb(44, 4, 103);
+    width: calc(100vw - 700px);
+    visibility: show;
+    border-top: #4911a0 5px solid;
+    border-right: #4911a0 5px solid;
+    margin-top: 115px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
     /* Logo */
