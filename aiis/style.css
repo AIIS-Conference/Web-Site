@@ -496,6 +496,7 @@ h2 {
 
 #venue_text p {
     font-size: max(1vw, 1.75vh);
+    margin-left: 2vw;
 }
 
 /* Schedule Page */
@@ -610,7 +611,7 @@ h2 {
 
 #about_text {
     background-color: rgb(44, 4, 103);
-    width: 25vw;
+    width: 30vw;
     height: 25vh;
     padding: 1vw;
     clip-path: polygon(5% 0%, 95% 0%, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0% 90%, 0% 10%);
@@ -651,7 +652,7 @@ h2 {
 }
 
 #about_handle_right {
-    left: 28vw;
+    left: 33vw;
     transform: scaleX(-1);
 }
 
@@ -666,10 +667,10 @@ h2 {
 #media_container {
     background-image: url('images/icons/media_container.svg');
     clip-path: polygon(
-        0% 0%, 85.24% 0%, /* Top side */
-        100% 8%, 100% 91.5%, /* Right side */
-        85.24% 100%, 15% 100%, /* Bottom side */
-        0% 91.5%, 0% 30% /* Left side */
+        0% 0%, 83.5% 0%, /* Top side */
+        100% 9%, 100% 90%, /* Right side */
+        83.5% 100%, 16.5% 100%, /* Bottom side */
+        0% 90%, 0% 0% /* Left side */
     );
     background-size: contain;
     background-repeat: no-repeat;
@@ -677,7 +678,7 @@ h2 {
     padding: min(1vw, 2vh);
     height: 70vh;
     position: absolute;
-    top: 17.5vh;
+    top: 22vh;
     right: 5vw;
     display: flex;
     flex-direction: column;
@@ -724,10 +725,7 @@ h2 {
     width: 40vw;
     height: 10vh;
     visibility: show;
-    border-top: #4911a0 5px solid;
-    border-left: #4911a0 5px solid;
-    border-right: #4911a0 5px solid;
-    border-bottom: #4911a0 5px solid;
+    border: #4911a0 5px solid;
     margin-top: 4vh;
     margin-left: 0.5vw;
     display: flex;
