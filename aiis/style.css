@@ -736,6 +736,73 @@ h2 {
     flex-wrap: wrap;
 }
 
+/* Previous Edition Page */
+
+#previous_edition_title {
+    font-size: 80px;
+    text-align: center;
+}
+
+#previous_edition_laptop {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+#previous_edition_text {
+    background-color: rgb(44, 4, 103);
+    border-radius: 20px;
+    width: 1400px;
+    margin: auto;
+}
+
+#previous_edition_text p {
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+}
+
+#previous_edition_speakers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#previous_edition_speakers_title {
+    margin-left: 20px;
+}
+
+.previous_speaker_card {
+    background-color: #6B717E;
+    width: min(18vw, 40vh);
+    border-radius: min(1vw, 2vh);
+    margin-bottom: 3vw;
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+.previous_speaker_name {
+    font-size: min(1.5vw, 3vh);
+    margin-top: 1vh;
+    font-weight: 400;
+    margin-left: 1vw;
+}
+
+.previous_speaker_company {
+    font-size: min(1vw, 2vh);
+    margin-top: -2vh;
+    font-weight: 400;
+    margin-left: 1vw;
+    padding-bottom: 4vh;
+}
+
+
+.previous_speaker_image {
+    width: min(18vw, 40vh);
+    border-top-left-radius: min(1vw, 2vh);
+    border-top-right-radius: min(1vw, 2vh);
+}
+
 /* Mobile Styles */
 @media (orientation: portrait) {
     /*
