@@ -712,12 +712,12 @@ h2 {
 /* Previous Edition Page */
 
 #previous_edition_title {
-    font-size: min(10vw, 10vh);
+    font-size: min(4vw, 8vh);
     text-align: center;
 }
 
-#previous_edition_laptop {
-    width: min(90vw, 90vh);
+.previous_edition_laptop {
+    width: 90vh;
     display: block;
     margin: auto;
     margin-top: -20vh;
@@ -725,32 +725,31 @@ h2 {
 
 #previous_edition_text {
     background-color: rgb(44, 4, 103);
-    border-radius: min(2.5vw, 2.5vh);
-    width: min(80vw, 140vh);
+    border-radius: min(1vw, 2vh);
+    width: 90vw;
     margin: auto;
 }
 
 #previous_edition_text p {
-    font-size: min(3vw, 3vh);
-    padding: min(2vw, 2vh);
+    font-size: min(1.5vw, 3vh);
+    padding: 0.5vw;
     text-align: center;
 }
 
 #previous_edition_speakers {
-    margin-top: min(10vw, 10vh);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 #previous_edition_speakers_title {
-    margin-left: min(13.5vw, 13.5vh);
-    font-size: min(5vw, 5vh);
+    font-size: 5vh;
+    margin-left: 8vw;
 }
 
 .previous_speaker_card {
     background-color: #6B717E;
-    width: min-content;
+    width: min(18vw, 40vh);
     border-radius: min(1vw, 2vh);
     margin-bottom: 3vw;
     margin-right: 2vw;
@@ -772,15 +771,13 @@ h2 {
     padding-bottom: 4vh;
 }
 
-
 .previous_speaker_image_container {
     aspect-ratio: 1 / 1;
     overflow: hidden;
 }
 
 .previous_speaker_image {
-    width: min(35vw, 35vh);
-    height: min(35vw, 35vh);
+    width: min(18vw, 40vh);
     border-top-left-radius: min(1vw, 2vh);
     border-top-right-radius: min(1vw, 2vh);
     width: 100%;
@@ -1195,73 +1192,48 @@ h2 {
         height: 0;
     }
 
-/* Previous Edition Page */
+    /* Previous Edition*/
+    #previous_edition_title {
+        font-size: 4vh;
+    }
 
-#previous_edition_title {
-    font-size: min(10vw, 10vh);
-    text-align: center;
-}
+    #previous_edition_speakers_title {
+        font-size: 2vh;
+    }
 
-#previous_edition_laptop {
-    width: min(90vw, 90vh);
-    display: block;
-    margin: auto;
-    margin-top: -10vh;
-}
+    .previous_edition_laptop {
+        width: 90vw;
+        margin-top: -10vh;
+    }
 
-#previous_edition_text {
-    background-color: rgb(44, 4, 103);
-    border-radius: min(2.5vw, 2.5vh);
-    width: min(80vw, 140vh);
-    margin: auto;
-}
+    #previous_edition_text {
+        border-radius: 2vh;
+    }
 
-#previous_edition_text p {
-    font-size: min(3vw, 3vh);
-    padding: min(2vw, 2vh);
-    text-align: center;
-}
+    #previous_edition_text p {
+        font-size: 1.75vh;
+        padding: 2vw;
+    }
 
-#previous_edition_speakers {
-    margin-top: min(10vw, 10vh);
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+    .previous_speaker_card {
+        width: 20vh;
+        border-radius: 2vh;
+    }
+    
+    .previous_speaker_name {
+        font-size: 1.5vh;
+        margin-top: 0.75vh;
+        margin-left: 3vw;
+    }
+    
+    .previous_speaker_company {
+        font-size: 1vh;
+        margin-top: -1vh;
+        margin-left: 3vw;
+    }
 
-#previous_edition_speakers_title {
-    margin-left: min(13.5vw, 13.5vh);
-    font-size: min(5vw, 5vh);
-}
-
-.previous_speaker_card {
-    background-color: #6B717E;
-    width: min-content;
-    border-radius: min(1vw, 2vh);
-    margin-bottom: 3vw;
-    margin-right: 2vw;
-    margin-left: 2vw;
-}
-
-.previous_speaker_name {
-    font-size: min(1.5vw, 3vh);
-    margin-top: 1vh;
-    font-weight: 400;
-    margin-left: 1vw;
-}
-
-.previous_speaker_company {
-    font-size: min(1vw, 2vh);
-    margin-top: -2vh;
-    font-weight: 400;
-    margin-left: 1vw;
-    padding-bottom: 4vh;
-}
-
-.previous_speaker_image {
-    width: min(35vw, 35vh);
-    height: min(35vw, 35vh);
-    border-top-left-radius: min(1vw, 2vh);
-    border-top-right-radius: min(1vw, 2vh);
-}
+    .previous_speaker_image {
+        border-top-right-radius: 2vh;
+        border-top-left-radius: 2vh;
+    }
 }
