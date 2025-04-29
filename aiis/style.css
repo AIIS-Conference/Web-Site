@@ -712,26 +712,26 @@ h2 {
 /* Previous Edition Page */
 
 #previous_edition_title {
-    font-size: 80px;
+    font-size: min(4vw, 8vh);
     text-align: center;
 }
 
-#previous_edition_laptop {
-    width: 200px;
+.previous_edition_laptop {
+    width: 75vw;
     display: block;
     margin: 0 auto;
 }
 
 #previous_edition_text {
     background-color: rgb(44, 4, 103);
-    border-radius: 20px;
-    width: 1400px;
+    border-radius: min(1vw, 2vh);
+    width: 90vw;
     margin: auto;
 }
 
 #previous_edition_text p {
-    font-size: 24px;
-    padding: 10px;
+    font-size: min(1.5vw, 3vh);
+    padding: 0.5vw;
     text-align: center;
 }
 
@@ -742,7 +742,7 @@ h2 {
 }
 
 #previous_edition_speakers_title {
-    margin-left: 20px;
+    margin-left: 2vw;
 }
 
 .previous_speaker_card {
@@ -784,6 +784,41 @@ h2 {
     object-fit: cover;
     object-position: center;
     display: block;
+}
+
+@media (orientation: portrait) {
+    #previous_edition_title {
+        font-size: 4vh;
+    }
+
+    #previous_edition_speakers_title {
+        font-size: 2vh;
+    }
+
+    .previous_edition_laptop {
+        width: 90vw;
+        margin-top: -10vh;
+    }
+
+    #previous_edition_text p {
+        font-size: 1.75vh;
+        padding: 1vw;
+    }
+
+    .previous_speaker_card {
+        width: 20vh;
+        border-radius: 1vh;
+    }
+    
+    .previous_speaker_name {
+        font-size: 1.5vh;
+        margin-top: 0.75vh;
+    }
+    
+    .previous_speaker_company {
+        font-size: 1vh;
+        margin-top: -1vh;
+    }
 }
 
 /* Mobile Styles */
