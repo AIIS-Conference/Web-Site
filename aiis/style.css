@@ -373,16 +373,17 @@ h2 {
 
 #team_container {
     margin-left: 5vw;
-    width: 100%;
+    margin-right: 5vw;
+    width: 90%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1vw;
+    gap: 3vw;
     margin-top: 5vh;
 }
 
 #team_title {
-    font-size: min(2.8vw, 5vh);
-    font-weight: 400;
+    font-size: min(4vw, 8vh);
+    font-weight: 600;
     text-align: center;
 }
 
@@ -403,19 +404,19 @@ h2 {
 }
 
 .team_background {
-    width: 25vw;
-    height: 25vh;
+    width: 27.5vw;
+    height: 27.5vh;
     border-radius: min(1vw, 2vh);
     background: linear-gradient(to right, #4911a0, #330d90, #4911a0);
     border: 2px solid #e29eff;
 }
 
 .team_name {
-    font-size: min(1.5vw, 2.5vh)
+    font-size: min(2vw, 3.5vh)
 }
 
 .team_position {
-    font-size: min(1vw, 2vh)
+    font-size: min(1.5vw, 3vh)
 }
 
 @media (max-width: 1000px) { /* add 1 repeat at <1000px - test */
@@ -769,415 +770,424 @@ h2 {
 }
 
 
+.previous_speaker_image_container {
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+}
+
 .previous_speaker_image {
     width: min(18vw, 40vh);
     border-top-left-radius: min(1vw, 2vh);
     border-top-right-radius: min(1vw, 2vh);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
 }
 
 /* Mobile Styles */
 @media (orientation: portrait) {
-/*
-home page - triunghiuri de cercuri sus si jos
-about page - to be done
-*/
-
-/* Logo */
-.logo {
-    height: min-content;
-    display: flex;
-    align-items: center;
-    margin-top: min(-2vh, -2vw);
-    width: max-content;
-    top: 0;
-    left: 0;
-}
-
-.logo:hover {
-    cursor: pointer;
-}
-
-.logo-img {
-    width: min(30vh, 30vw);
-    margin-left: min(-1.5vh, -1.5vw);
-
-}
-
-.logo-text {
-    font-size: min(3.96vh, 3.96vw);
-    margin-left: min(-1.2vh, -1.2vw);
-}
-
-/* Main Page */
-#main_text h1 {
-    font-family: 'Exo 2', sans-serif;
-    font-size: min(30vh, 30vw);
-    margin-top: min(10vw, 10vh);
-}
-
-/* Pages */
-.pages {
-    width: min(25vh, 25vw);
-    height: min(25vh, 25vw);
-    background-image: url('images/cloud.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center max(-4vh, -4vw);
-    text-align: center;
-    padding: min(2vh, 2vw);
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-}
-
-.pages-text {
-    margin: auto;
-    color: black;
-}
-
-.pages-text h2 {
-    font-family: 'Alegreya Sans', sans-serif;
-    font-size: min(4.5vw, 4.5vh);
-    margin-top: auto;
-}
-
-/* About Section */
-#about {
-    top: calc(50% - max(-1.4vh, -1.4vw));
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(225deg) translate(min(40vh, 40vw)) rotate(-225deg);
-}
-
-/* Speakers Section */
-#speaker-page {
-    top: calc(50% - max(-1.4vh, -1.4vw));
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(270deg) translate(min(50vh, 50vw)) rotate(-270deg);
-}
-
-/* Schedule Section */
-#schedule {
-    top: calc(50% - max(-1.4vh, -1.4vw));
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(315deg) translate(min(40vh, 40vw)) rotate(-315deg);
-}
-
-/* Venue Section */
-#venue {
-    top: calc(50% - max(-1.4vh, -1.4vw));
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(45deg) translate(min(40vh, 40vw)) rotate(-45deg);
-}
-
-/* Team Section */
-#team-page {
-    top: calc(50% - max(-1.4vh, -1.4vw));
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(90deg) translate(min(50vh, 50vw)) rotate(-90deg);
-}
-
-/* Previous Edition Section */
-#previous-edition {
-    top: calc(50% - max(-1.4vh, -1.4vw));
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(135deg) translate(min(40vh, 40vw)) rotate(-135deg);
-}
-
-/* Ticket Section */
-#ticket-page {
-    width: min(25vh, 25vw);
-    height: min(10vh, 10vw);
-    background-color: rgb(86, 1, 157);
-    text-align: center;
-    border-radius: 2vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    margin-top: min(35vh, 35vw);
-    cursor: pointer;
-}
-
-#ticket-page h2 {
-    font-family: 'Alegreya Sans', sans-serif;
-    font-size: min(4vh, 4vw);
-    margin: 0;
-    line-height: min(9vh, 9vw);
-    color: white;
-}
-
-/* About Page */
-#about_body {
-    width: 90vw;
-    height: 100vh;
-}
-
-/* About Page */
-
-#about_title {
-    width: max-content;
-    height: max-content;
-    padding-left: 1vw;
-    margin-left: 8vw;
-    margin-top: -2vh;
-}
-
-#about_title_line {
-    width: 1.25vw;
-    height: 15vh;
-    background-color: rgb(86, 1, 157);
-    float: left;
-    margin-left: -4vw;
-    border-radius: 1vw;
-}
-
-#about_title h2 {
-    font-size: 2vh;
-}
-
-#about_title h1 {
-    font-size: 4vh;
-    font-weight: 800;
-    line-height: 3vh;
-}
-
-#about_text {
-    background-color: rgb(44, 4, 103);
-    width: 85vw;
-    height: 20vh;
-    clip-path: polygon(5% 0%, 95% 0%, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0% 90%, 0% 10%);
-    margin: -0.5vh;
-    left: 5vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-    position: relative;
-    z-index: 1;
-}
-
-#about_text p {
-    margin-right: 5vw;
-    margin-left: 5vw;
-    font-size: 1.4vh;
-}
-
-.about_container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin: 0 auto;
-    margin-top: -1vh;
-}
-
-.about_handle {
-    background-color: rgb(86, 1, 157);
-    width: 1.5vw;
-    height: 12vh;
-    position: absolute;
-    z-index: 2;
-    clip-path: polygon(0% 0%, 45% 0%, 100% 15%, 100% 85%, 45% 100%, 0% 100%);
-}
-
-#about_handle_left {
-    width: 5vw;
-    left: 5.25vw;
-}
-
-#about_handle_right {
-    width: 5vw;
-    left: 89.75vw;
-    transform: scaleX(-1);
-}
-
-#contact-us {
-    position: relative;
-    top: 0;
-    left: 9vw;
-    font-size: 3vh;
-    font-weight: 800;
-}
-
-#media_container {
-    background-image: url('images/icons/media_container.svg');
-    clip-path: polygon(
-        0% 0%, 85.24% 0%, /* Top side */
-        100% 8%, 100% 91.5%, /* Right side */
-        85.24% 100%, 15% 100%, /* Bottom side */
-        0% 91.5%, 0% 30% /* Left side */
-    );
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: min(1vw, 2vh);
-    height: 38vh;
-    width: 50vw;
-    position: relative;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.media {
-    display: flex;
-    align-items: center;
-    margin-top: 1vh;
-    width: 100%;
-    margin-left: calc(50vw - 120px);
-    height: min-content;
-}
-
-.contact_icon {
-    width: 3.5vh;
-    height: 3.5vh;
-}
-
-.contact_text {
-    color: white;
-    text-decoration: none;
-    font-size: 1.25vh;
-    padding-left: 0.5vw;
-}
-
-.collaborator {
-    width: 35vw;
-    padding: 2vw;
-}
-
-#quantum_robotics {
-    margin-top: -1vh;
-}
-
-#collaborators_container {
-    background-color: rgb(44, 4, 103);
-    width: 40vw;
-    height: 40vh;
-    visibility: show;
-    border: #4911a0 2px solid;
-    margin-top: -40.5vh;
-    margin-right: -7vw;
-    margin-left: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-/* Speaker Page */
-
-#more_speakers_container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: min(-5vw, -10vh);
-    padding-top: 5vh;
-}
-
-.speaker_card {
-    background-color: #6B717E;
-    width: min(30vw, 60vh);
-    border-radius: min(2vw, 4vh);
-    margin-bottom: 6vw;
-    margin-right: 6vw;
-    margin-left: 6vw;
-}
-
-.speaker_card h1 {
-    font-size: min(3vw, 6vh);
-    font-weight: 400;
-    margin-left: 2vw;
-}
-
-.speaker_card h2 {
-    font-size: min(2vw, 4vh);
-    font-weight: 400;
-    margin-left: 2vw;
-}
-
-.speaker_card p {
-    margin-left: 2vw;
-    font-size: min(2vw, 4vh);
-}
-
-.speaker_card .speaker_description {
-    font-size: 0px;
-    visibility: hidden;
-}
-
-.speaker_card:hover {
-    cursor: pointer;
-}
-
-.speaker_image {
-    width: min(30vw, 60vh);
-    border-top-left-radius: min(2vw, 4vh);
-    border-top-right-radius: min(2vw, 4vh);
-}
-
-#speaker_title {
-    font-size: min(10vw, 20vh);
-    margin-top: min(1vw, 2vh);
-    text-align: center;
-}
-
-#main_speaker_card {
-    /* on start */
-    visibility: hidden;
-    height: 0;
-}
-
-#main_speaker_image {
-    height: min(50vw, 100vh);
-    border-radius: min(25vw, 50vh);
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-#speaker_logo {
-    height: min(10vw, 20vh);
-    float: inline-end;
-    margin-top: 1vh;
-    margin-right: 1vw;
-}
-
-#main_speaker_text {
-    width: 70vw;
-    text-align: justify;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-}
-
-#main_speaker_text h1 {
-    font-size: min(8vw, 16vh);
-    font-weight: 800;
-}
-
-#main_speaker_text h2 {
-    font-size: min(6vw, 12vh);
-    font-weight: 400;
-    margin-top: 0;
-}
-
-#main_speaker_text p {
-    font-size: min(4vw, 8vh);
-}
-
-#more_speakers_title {
-    text-align: center;
-    font-size: min(6vw, 12vh);
-    font-weight: 400;
-    margin-top: 5vh;
-    padding-bottom: 0vh;
-    /* on start */
-    visibility: hidden;
-    height: 0;
-}
+    /*
+        about page - to be done
+    */
+    
+    /* Logo */
+    .logo {
+        height: min-content;
+        display: flex;
+        align-items: center;
+        margin-top: min(-2vh, -2vw);
+        width: max-content;
+        top: 0;
+        left: 0;
+    }
+    
+    .logo:hover {
+        cursor: pointer;
+    }
+    
+    .logo-img {
+        width: min(30vh, 30vw);
+        margin-left: min(-1.5vh, -1.5vw);
+    
+    }
+    
+    .logo-text {
+        font-size: min(3.96vh, 3.96vw);
+        margin-left: min(-1.2vh, -1.2vw);
+    }
+    
+    /* Main Page */
+    #main_text h1 {
+        font-family: 'Exo 2', sans-serif;
+        font-size: min(30vh, 30vw);
+        margin-top: min(10vw, 10vh);
+    }
+    
+    /* Pages */
+    .pages {
+        width: min(25vh, 25vw);
+        height: min(25vh, 25vw);
+        background-image: url('images/cloud.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center max(-4vh, -4vw);
+        text-align: center;
+        padding: min(2vh, 2vw);
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+    }
+    
+    .pages-text {
+        margin: auto;
+        color: black;
+    }
+    
+    .pages-text h2 {
+        font-family: 'Alegreya Sans', sans-serif;
+        font-size: min(4.5vw, 4.5vh);
+        margin-top: auto;
+    }
+    
+    /* About Section */
+    #about {
+        top: calc(50% - max(-1.4vh, -1.4vw));
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(225deg) translate(min(40vh, 40vw)) rotate(-225deg);
+    }
+    
+    /* Speakers Section */
+    #speaker-page {
+        top: calc(50% - max(-1.4vh, -1.4vw));
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(270deg) translate(min(50vh, 50vw)) rotate(-270deg);
+    }
+    
+    /* Schedule Section */
+    #schedule {
+        top: calc(50% - max(-1.4vh, -1.4vw));
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(315deg) translate(min(40vh, 40vw)) rotate(-315deg);
+    }
+    
+    /* Venue Section */
+    #venue {
+        top: calc(50% - max(-1.4vh, -1.4vw));
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg) translate(min(40vh, 40vw)) rotate(-45deg);
+    }
+    
+    /* Team Section */
+    #team-page {
+        top: calc(50% - max(-1.4vh, -1.4vw));
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(90deg) translate(min(50vh, 50vw)) rotate(-90deg);
+    }
+    
+    /* Previous Edition Section */
+    #previous-edition {
+        top: calc(50% - max(-1.4vh, -1.4vw));
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(135deg) translate(min(40vh, 40vw)) rotate(-135deg);
+    }
+    
+    /* Ticket Section */
+    #ticket-page {
+        width: min(25vh, 25vw);
+        height: min(10vh, 10vw);
+        background-color: rgb(86, 1, 157);
+        text-align: center;
+        border-radius: 2vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        margin-top: min(35vh, 35vw);
+        cursor: pointer;
+    }
+    
+    #ticket-page h2 {
+        font-family: 'Alegreya Sans', sans-serif;
+        font-size: min(4vh, 4vw);
+        margin: 0;
+        line-height: min(9vh, 9vw);
+        color: white;
+    }
+    
+    /* About Page */
+    #about_body {
+        width: 90vw;
+        height: 100vh;
+    }
+    
+    /* About Page */
+    
+    #about_title {
+        width: max-content;
+        height: max-content;
+        padding-left: 1vw;
+        margin-left: 8vw;
+        margin-top: -2vh;
+    }
+    
+    #about_title_line {
+        width: 1.25vw;
+        height: 15vh;
+        background-color: rgb(86, 1, 157);
+        float: left;
+        margin-left: -4vw;
+        border-radius: 1vw;
+    }
+    
+    #about_title h2 {
+        font-size: 2vh;
+    }
+    
+    #about_title h1 {
+        font-size: 4vh;
+        font-weight: 800;
+        line-height: 3vh;
+    }
+    
+    #about_text {
+        background-color: rgb(44, 4, 103);
+        width: 85vw;
+        height: 20vh;
+        clip-path: polygon(5% 0%, 95% 0%, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0% 90%, 0% 10%);
+        margin: -0.5vh;
+        left: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+        position: relative;
+        z-index: 1;
+    }
+    
+    #about_text p {
+        margin-right: 5vw;
+        margin-left: 5vw;
+        font-size: 1.4vh;
+    }
+    
+    .about_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin: 0 auto;
+        margin-top: -1vh;
+    }
+    
+    .about_handle {
+        background-color: rgb(86, 1, 157);
+        width: 1.5vw;
+        height: 12vh;
+        position: absolute;
+        z-index: 2;
+        clip-path: polygon(0% 0%, 45% 0%, 100% 15%, 100% 85%, 45% 100%, 0% 100%);
+    }
+    
+    #about_handle_left {
+        width: 5vw;
+        left: 5.25vw;
+    }
+    
+    #about_handle_right {
+        width: 5vw;
+        left: 89.75vw;
+        transform: scaleX(-1);
+    }
+    
+    #contact-us {
+        position: relative;
+        top: 0;
+        left: 9vw;
+        font-size: 3vh;
+        font-weight: 800;
+    }
+    
+    #media_container {
+        background-image: url('images/icons/media_container.svg');
+        clip-path: polygon(
+            0% 0%, 85.24% 0%, /* Top side */
+            100% 8%, 100% 91.5%, /* Right side */
+            85.24% 100%, 15% 100%, /* Bottom side */
+            0% 91.5%, 0% 30% /* Left side */
+        );
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: min(1vw, 2vh);
+        height: 38vh;
+        width: 50vw;
+        position: relative;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .media {
+        display: flex;
+        align-items: center;
+        margin-top: 1vh;
+        width: 100%;
+        margin-left: calc(50vw - 120px);
+        height: min-content;
+    }
+    
+    .contact_icon {
+        width: 3.5vh;
+        height: 3.5vh;
+    }
+    
+    .contact_text {
+        color: white;
+        text-decoration: none;
+        font-size: 1.25vh;
+        padding-left: 0.5vw;
+    }
+    
+    .collaborator {
+        width: 35vw;
+        padding: 2vw;
+    }
+    
+    #quantum_robotics {
+        margin-top: -1vh;
+    }
+    
+    #collaborators_container {
+        background-color: rgb(44, 4, 103);
+        width: 40vw;
+        height: 40vh;
+        visibility: show;
+        border: #4911a0 2px solid;
+        margin-top: -40.5vh;
+        margin-right: -7vw;
+        margin-left: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    /* Speaker Page */
+    
+    #more_speakers_container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: min(-5vw, -10vh);
+        padding-top: 5vh;
+    }
+    
+    .speaker_card {
+        background-color: #6B717E;
+        width: min(30vw, 60vh);
+        border-radius: min(2vw, 4vh);
+        margin-bottom: 6vw;
+        margin-right: 6vw;
+        margin-left: 6vw;
+    }
+    
+    .speaker_card h1 {
+        font-size: min(3vw, 6vh);
+        font-weight: 400;
+        margin-left: 2vw;
+    }
+    
+    .speaker_card h2 {
+        font-size: min(2vw, 4vh);
+        font-weight: 400;
+        margin-left: 2vw;
+    }
+    
+    .speaker_card p {
+        margin-left: 2vw;
+        font-size: min(2vw, 4vh);
+    }
+    
+    .speaker_card .speaker_description {
+        font-size: 0px;
+        visibility: hidden;
+    }
+    
+    .speaker_card:hover {
+        cursor: pointer;
+    }
+    
+    .speaker_image {
+        width: min(30vw, 60vh);
+        border-top-left-radius: min(2vw, 4vh);
+        border-top-right-radius: min(2vw, 4vh);
+    }
+    
+    #speaker_title {
+        font-size: min(10vw, 20vh);
+        margin-top: min(1vw, 2vh);
+        text-align: center;
+    }
+    
+    #main_speaker_card {
+        /* on start */
+        visibility: hidden;
+        height: 0;
+    }
+    
+    #main_speaker_image {
+        height: min(50vw, 100vh);
+        border-radius: min(25vw, 50vh);
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    #speaker_logo {
+        height: min(10vw, 20vh);
+        float: inline-end;
+        margin-top: 1vh;
+        margin-right: 1vw;
+    }
+    
+    #main_speaker_text {
+        width: 70vw;
+        text-align: justify;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    #main_speaker_text h1 {
+        font-size: min(8vw, 16vh);
+        font-weight: 800;
+    }
+    
+    #main_speaker_text h2 {
+        font-size: min(6vw, 12vh);
+        font-weight: 400;
+        margin-top: 0;
+    }
+    
+    #main_speaker_text p {
+        font-size: min(4vw, 8vh);
+    }
+    
+    #more_speakers_title {
+        text-align: center;
+        font-size: min(6vw, 12vh);
+        font-weight: 400;
+        margin-top: 5vh;
+        padding-bottom: 0vh;
+        /* on start */
+        visibility: hidden;
+        height: 0;
+    }
 }
