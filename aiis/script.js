@@ -43,7 +43,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 moreSpeakersTitle.style.visibility = "visible";
                 moreSpeakersTitle.style.height = "auto";
                 moreSpeakersContainer.style.marginTop = "20px";
-
+                moreSpeakersContainer.style.paddingTop = "0";
+                if (window.matchMedia("(orientation: portrait)").matches) {
+                    mainSpeakerCard.style.display = "block";
+                }
                 // Scroll to the same distance from the bottom
                 window.scrollTo({ top: document.body.scrollHeight - window.innerHeight - distanceToBottom, behavior: 'instant' });
                 setTimeout(() => {

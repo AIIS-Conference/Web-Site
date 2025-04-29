@@ -540,3 +540,161 @@ clip-path: polygon(
         75% 100%, 25% 100%, /* Bottom side */
         0% 87%, 0% 12.5% /* Left side */
     );
+
+
+    /* About Page */
+#about_body {
+    background: linear-gradient(to right, rgb(7, 1, 47), rgb(30, 15, 96));
+}
+
+#about_title {
+    width: max-content;
+    height: max-content;
+    padding-left: 1vw;
+    margin-left: 2vw;
+    margin-top: 0px;
+}
+
+#about_title_line {
+    width: 0.5vw;
+    height: min(13vw, 26vh);
+    background-color: rgb(86, 1, 157);
+    float: left;
+    margin-left: -2vh;
+    border-radius: 0.5vw;
+}
+
+#about_title h2 {
+    font-size: min(2vw, 4vh);
+}
+
+#about_title h1 {
+    font-size: min(4vw, 8vh);
+    font-weight: 800;
+    line-height: min(2vw, 4vh);
+}
+
+#about_text {
+    background-color: rgb(44, 4, 103);
+    width: 30vw;
+    height: 25vh;
+    padding: 1vw;
+    clip-path: polygon(5% 0%, 95% 0%, 100% 10%, 100% 90%, 95% 100%, 5% 100%, 0% 90%, 0% 10%);
+    margin: 1vh 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    position: relative;
+    z-index: 1;
+}
+
+#about_text p {
+    margin: 0;
+    padding: 1vw;
+    font-size: min(2vw, 2vh);
+}
+
+.about_container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    margin-left: 2vw;
+}
+
+.about_handle {
+    background-color: rgb(86, 1, 157);
+    width: 1.25vw;
+    height: 12.5vh;
+    position: absolute;
+    z-index: 2;
+    clip-path: polygon(0% 0%, 45% 0%, 100% 15%, 100% 85%, 45% 100%, 0% 100%);
+}
+
+#about_handle_left {
+    left: 1.75vw;
+}
+
+#about_handle_right {
+    left: 33vw;
+    transform: scaleX(-1);
+}
+
+#contact-us {
+    position: absolute;
+    top: 7.5vh;
+    right: 7.5vw;
+    font-size: min(3.5vw, 7vh);
+    font-weight: 800;
+}
+
+#media_container {
+    background-image: url('images/icons/media_container.svg');
+    clip-path: polygon(
+        0% 0%, 83.5% 0%, /* Top side */
+        100% 9%, 100% 90%, /* Right side */
+        83.5% 100%, 16.5% 100%, /* Bottom side */
+        0% 90%, 0% 0% /* Left side */
+    );
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: min(1vw, 2vh);
+    height: 70vh;
+    position: absolute;
+    top: 22vh;
+    right: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.media {
+    display: flex;
+    align-items: center;
+    margin-top: 2vh;
+    width: 100%;
+    margin-left: 5vw;
+    height: min-content;
+}
+
+.media:hover {
+    cursor: pointer;
+}
+
+.contact_icon {
+    width: min(3vw, 6vh);
+    height: min(3vw, 6vh);
+}
+
+.contact_text {
+    color: white;
+    text-decoration: none;
+    font-size: min(1.25vw, 2.5vh);
+    padding-left: 0.5vw;
+}
+
+.collaborator {
+    width: 10vw;
+    padding: 1vw;
+}
+
+#quantum_robotics {
+    margin-top: -1vh;
+}
+
+#collaborators_container {
+    background-color: rgb(44, 4, 103);
+    width: 40vw;
+    height: 10vh;
+    visibility: show;
+    border: #4911a0 5px solid;
+    margin-top: 4vh;
+    margin-left: 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
