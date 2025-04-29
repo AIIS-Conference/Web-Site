@@ -787,6 +787,41 @@ h2 {
     display: block;
 }
 
+@media (orientation: portrait) {
+    #previous_edition_title {
+        font-size: 4vh;
+    }
+
+    #previous_edition_speakers_title {
+        font-size: 2vh;
+    }
+
+    .previous_edition_laptop {
+        width: 90vw;
+        margin-top: -10vh;
+    }
+
+    #previous_edition_text p {
+        font-size: 1.75vh;
+        padding: 1vw;
+    }
+
+    .previous_speaker_card {
+        width: 20vh;
+        border-radius: 1vh;
+    }
+    
+    .previous_speaker_name {
+        font-size: 1.5vh;
+        margin-top: 0.75vh;
+    }
+    
+    .previous_speaker_company {
+        font-size: 1vh;
+        margin-top: -1vh;
+    }
+}
+
 /* Mobile Styles */
 @media (orientation: portrait) {
     /*
