@@ -711,42 +711,45 @@ h2 {
 /* Previous Edition Page */
 
 #previous_edition_title {
-    font-size: 80px;
+    font-size: min(10vw, 10vh);
     text-align: center;
 }
 
 #previous_edition_laptop {
-    width: 200px;
+    width: min(90vw, 90vh);
     display: block;
-    margin: 0 auto;
+    margin: auto;
+    margin-top: -20vh;
 }
 
 #previous_edition_text {
     background-color: rgb(44, 4, 103);
-    border-radius: 20px;
-    width: 1400px;
+    border-radius: min(2.5vw, 2.5vh);
+    width: min(80vw, 140vh);
     margin: auto;
 }
 
 #previous_edition_text p {
-    font-size: 24px;
-    padding: 10px;
+    font-size: min(3vw, 3vh);
+    padding: min(2vw, 2vh);
     text-align: center;
 }
 
 #previous_edition_speakers {
+    margin-top: min(10vw, 10vh);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 #previous_edition_speakers_title {
-    margin-left: 20px;
+    margin-left: min(13.5vw, 13.5vh);
+    font-size: min(5vw, 5vh);
 }
 
 .previous_speaker_card {
     background-color: #6B717E;
-    width: min(18vw, 40vh);
+    width: min-content;
     border-radius: min(1vw, 2vh);
     margin-bottom: 3vw;
     margin-right: 2vw;
@@ -768,9 +771,9 @@ h2 {
     padding-bottom: 4vh;
 }
 
-
 .previous_speaker_image {
-    width: min(18vw, 40vh);
+    width: min(35vw, 35vh);
+    height: min(35vw, 35vh);
     border-top-left-radius: min(1vw, 2vh);
     border-top-right-radius: min(1vw, 2vh);
 }
@@ -1179,5 +1182,75 @@ about page - to be done
     /* on start */
     visibility: hidden;
     height: 0;
+}
+
+/* Previous Edition Page */
+
+#previous_edition_title {
+    font-size: min(10vw, 10vh);
+    text-align: center;
+}
+
+#previous_edition_laptop {
+    width: min(90vw, 90vh);
+    display: block;
+    margin: auto;
+    margin-top: -10vh;
+}
+
+#previous_edition_text {
+    background-color: rgb(44, 4, 103);
+    border-radius: min(2.5vw, 2.5vh);
+    width: min(80vw, 140vh);
+    margin: auto;
+}
+
+#previous_edition_text p {
+    font-size: min(3vw, 3vh);
+    padding: min(2vw, 2vh);
+    text-align: center;
+}
+
+#previous_edition_speakers {
+    margin-top: min(10vw, 10vh);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#previous_edition_speakers_title {
+    margin-left: min(13.5vw, 13.5vh);
+    font-size: min(5vw, 5vh);
+}
+
+.previous_speaker_card {
+    background-color: #6B717E;
+    width: min-content;
+    border-radius: min(1vw, 2vh);
+    margin-bottom: 3vw;
+    margin-right: 2vw;
+    margin-left: 2vw;
+}
+
+.previous_speaker_name {
+    font-size: min(1.5vw, 3vh);
+    margin-top: 1vh;
+    font-weight: 400;
+    margin-left: 1vw;
+}
+
+.previous_speaker_company {
+    font-size: min(1vw, 2vh);
+    margin-top: -2vh;
+    font-weight: 400;
+    margin-left: 1vw;
+    padding-bottom: 4vh;
+}
+
+.previous_speaker_image {
+    width: min(35vw, 35vh);
+    height: min(35vw, 35vh);
+    border-top-left-radius: min(1vw, 2vh);
+    border-top-right-radius: min(1vw, 2vh);
 }
 }
