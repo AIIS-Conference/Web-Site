@@ -81,7 +81,7 @@ h2 {
 }
 
 .button:after {
-    border: 4px solid rgb(226, 158, 255);
+    border: 4px solid rgb(127, 1, 233);
     transform: scale(1.3);
     transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     opacity: 0;
@@ -361,8 +361,10 @@ h2 {
 #team_wrapper {
     display: block;
     align-items: center;
-    height: 150vh;
-    width: 100vw;
+    height: min-content;
+    padding-bottom: 5vh;
+    width: min-content;
+    margin: auto;
     margin-top: 70vh;
 }
 
@@ -374,10 +376,10 @@ h2 {
 #team_container {
     margin-left: 5vw;
     margin-right: 5vw;
-    width: 90%;
+    width: min-content;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 3vw;
+    gap: 5vw;
     margin-top: 5vh;
 }
 
@@ -387,15 +389,9 @@ h2 {
     text-align: center;
 }
 
-#team_info {
-    font-size: min(0.85vw, 1.5vh);
-    text-align: justify;
-    margin-left: 2vh;
-    margin-right: 2vh;
-}
-
 .team_card {
-    margin: 0px;
+    margin: 0;
+    width: min-content;
 }
 
 .team_image {
@@ -404,7 +400,7 @@ h2 {
 }
 
 .team_background {
-    width: 27.5vw;
+    width: 24vw;
     height: 27.5vh;
     border-radius: min(1vw, 2vh);
     background: linear-gradient(to right, #4911a0, #330d90, #4911a0);
@@ -423,6 +419,13 @@ h2 {
     #team_container {
         grid-template-columns: repeat(2, 1fr);
         margin-top: 0vh;
+        justify-content: center;
+    }
+
+    #team_container .team_card:last-child:nth-child(odd) {
+        grid-column: span 2;
+        justify-self: center;
+        text-align: center;
     }
 
     #team_title {
@@ -432,7 +435,7 @@ h2 {
     .team_background {
         width: 40vw;
         height: 12.5vh;
-        border-radius: min(1vw, 2vh);
+        border-radius: min(3vw, 6vh);
         border: 1px solid #e29eff;
     }
 
@@ -714,6 +717,7 @@ h2 {
 #previous_edition_title {
     font-size: min(4vw, 8vh);
     text-align: center;
+    margin-top: 0;
 }
 
 .previous_edition_laptop {
@@ -721,13 +725,28 @@ h2 {
     display: block;
     margin: auto;
     margin-top: -20vh;
+    position: relative;
+}
+
+.radial-glow {
+    position: absolute;
+    top: 60vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    width: 90vh;
+    height: 70vh;
+    background: radial-gradient(ellipse, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+    z-index: -1;
+    pointer-events: none;
 }
 
 #previous_edition_text {
     background-color: rgb(44, 4, 103);
-    border-radius: min(1vw, 2vh);
+    border-radius: min(1.5vw, 3vh);
     width: 90vw;
     margin: auto;
+    margin-top: max(-15vh, -15vw);
 }
 
 #previous_edition_text p {
@@ -785,41 +804,6 @@ h2 {
     object-fit: cover;
     object-position: center;
     display: block;
-}
-
-@media (orientation: portrait) {
-    #previous_edition_title {
-        font-size: 4vh;
-    }
-
-    #previous_edition_speakers_title {
-        font-size: 2vh;
-    }
-
-    .previous_edition_laptop {
-        width: 90vw;
-        margin-top: -10vh;
-    }
-
-    #previous_edition_text p {
-        font-size: 1.75vh;
-        padding: 1vw;
-    }
-
-    .previous_speaker_card {
-        width: 20vh;
-        border-radius: 1vh;
-    }
-    
-    .previous_speaker_name {
-        font-size: 1.5vh;
-        margin-top: 0.75vh;
-    }
-    
-    .previous_speaker_company {
-        font-size: 1vh;
-        margin-top: -1vh;
-    }
 }
 
 /* Mobile Styles */
@@ -959,8 +943,6 @@ h2 {
         width: 90vw;
         height: 100vh;
     }
-    
-    /* About Page */
     
     #about_title {
         width: max-content;
@@ -1103,10 +1085,10 @@ h2 {
     #collaborators_container {
         background-color: rgb(44, 4, 103);
         width: 40vw;
-        height: 40vh;
+        height: 38.3vh;
         visibility: show;
         border: #4911a0 2px solid;
-        margin-top: -40.5vh;
+        margin-top: -38.8vh;
         margin-right: -7vw;
         margin-left: auto;
         display: flex;
@@ -1232,8 +1214,19 @@ h2 {
         font-size: 4vh;
     }
 
+    #previous_edition_speakers {
+        display: grid;
+        gap: 3vw;
+        grid-template-columns: repeat(2, 1fr);
+        width: min-content;
+        margin: auto;
+        margin-top: 2vh;
+        justify-content: center;
+    }
+
     #previous_edition_speakers_title {
         font-size: 2vh;
+        margin-top: 3vh;
     }
 
     .previous_edition_laptop {
@@ -1241,8 +1234,23 @@ h2 {
         margin-top: -10vh;
     }
 
+    .radial-glow {
+        position: absolute;
+        top: 30vh;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+        width: 45vh;
+        height: 35vh;
+        background: radial-gradient(ellipse, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 70%);
+        border-radius: 50%;
+        z-index: -1;
+        pointer-events: none;
+    }
+
     #previous_edition_text {
         border-radius: 2vh;
+        padding-left: min(2vw, 2vh);
+        padding-right: min(2vw, 2vh);
     }
 
     #previous_edition_text p {
@@ -1251,18 +1259,18 @@ h2 {
     }
 
     .previous_speaker_card {
-        width: 20vh;
+        width: 18vh;
         border-radius: 2vh;
     }
     
     .previous_speaker_name {
-        font-size: 1.5vh;
+        font-size: 1.8vh;
         margin-top: 0.75vh;
         margin-left: 3vw;
     }
     
     .previous_speaker_company {
-        font-size: 1vh;
+        font-size: 1.2vh;
         margin-top: -1vh;
         margin-left: 3vw;
     }
