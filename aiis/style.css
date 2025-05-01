@@ -22,7 +22,7 @@ h1 {
     font-family: 'Alegreya Sans', sans-serif;
 }
 
-h2 {
+h2, h3, h4, h5, h6 {
     font-family: 'Exo 2', sans-serif;
 }
 
@@ -478,81 +478,124 @@ h2 {
 }
 
 /* Schedule Page */
-#schedule_wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: min(2.6vw, 2vh);
+#schedule_title{
+    font-size: max(5vw, 5vh);
+    padding: 0;
+    text-align: center;
 }
 
-#schedule_title {
-    font-size: min(15vw, 8vh);
+#schedule_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    margin-top: 0;
+    box-sizing: border-box;
+}
+
+.day {
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    max-width: 90vw;
+    margin: auto;
+    padding: 5vh 2vw;
+    font-weight: 300;
+    color: #333;
+    box-sizing: border-box;
+}
+.day * {
+    box-sizing: border-box;
+}
+.day h1 {
+    font-size: max(3vw, 3vh);
+    margin: 0;
+    padding: 0;
+    padding-bottom: 2vh;
     font-weight: 600;
     text-align: center;
-    margin-bottom: min(2.6vw, 2vh);
+    color: white;
 }
 
-#schedule_header {
-    display: flex;
-    justify-content: center;
+.timeline {
     width: 100%;
+    max-width: 800px;
+    background: #fff;
+    border-radius: 2vh;
+    padding: 100px 50px;
+    padding-bottom: 0;
+    position: relative;
+    box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
 }
-
-.schedule_day {
-    background-color: #6B717E;
-    border-radius: min(2.6vw, 2vh);
-    padding: min(2.6vw, 2vh);
-    margin: min(2.6vw, 2vh);
-    width: min(40vh, 600px);
-    text-align: center;
+.timeline:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: calc(33% + 15px);
+    bottom: 0px;
+    width: 4px;
+    background: linear-gradient(to bottom, #ddd 80%, #fff 100%);
 }
-
-.schedule_day h2, .schedule_day h3, .schedule_day h4, .schedule_day p {
-    margin: 0.75vh 0;
+.timeline:after {
+    content: "";
+    display: table;
+    clear: both;
 }
-
-.schedule_day h2 {
-    font-size: min(5vw, 3.5vh);
-    font-weight: 700;
-    border: dotted;
-    border-top-width: min(0.7vw, 0.4vh);
-    border-left-width: min(0.7vw, 0.4vh);
-    border-right-width: min(0.7vw, 0.4vh);
-    border-bottom-width: 0px;
-    border-color: lightgray;
+.entry {
+    clear: both;
+    text-align: left;
+    position: relative;
 }
-
-.schedule_day h3 {
-    font-size: min(3.3vw, 2.4vh);
+.entry .title {
+    margin-bottom: 0.5em;
+    float: left;
+    width: 33%;
+    padding-right: 30px;
+    text-align: right;
+    position: relative;
+}
+.entry .title:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 4px solid rgb(127, 1, 233);
+    background-color: #fff;
+    border-radius: 100%;
+    top: 15%;
+    right: -8px;
+    z-index: 99;
+}
+.entry .title h3 {
+    margin: 0;
+    font-size: 120%;
+}
+.entry .title p {
+    margin: 0;
+    font-size: 100%;
+}
+.entry .body {
+    margin: 0 0 3em;
+    float: right;
+    width: 66%;
+    padding-left: 30px;
+}
+.entry .body p {
+    line-height: 1.4em;
+}
+.entry .body p:first-child {
+    margin-top: 0;
     font-weight: 400;
-    border: dotted;
-    border-top-width: 0px;
-    border-left-width: min(0.7vw, 0.4vh);
-    border-right-width: min(0.7vw, 0.4vh);
-    border-bottom-width: min(0.7vw, 0.4vh);
-    border-color: lightgray;
 }
-
-.schedule_day h4 {
-    font-size: min(2.6vw, 2vh);
-    font-weight: 400;
-    border: dotted;
-    border-top-width: 0px;
-    border-left-width: min(0.7vw, 0.4vh);
-    border-right-width: min(0.7vw, 0.4vh);
-    border-bottom-width: 0;
-    border-color: lightgray;
+.entry .body ul {
+    color: #aaa;
+    padding-left: 0;
+    list-style-type: none;
 }
-
-.schedule_day p {
-    font-size: min(2.5vw, 1.7vh);
-    font-weight: 400;
-    border: dotted;
-    border-top-width: 0px;
-    border-left-width: min(0.7vw, 0.4vh);
-    border-right-width: min(0.7vw, 0.4vh);
-    border-bottom-width: min(0.7vw, 0.4vh);
-    border-color: lightgray;
+.entry .body ul li:before {
+    content: "–";
+    margin-right: 0.5em;
 }
 
 /* About Page */
@@ -1275,5 +1318,19 @@ h2 {
     .previous_speaker_image {
         border-top-right-radius: 2vh;
         border-top-left-radius: 2vh;
+    }
+
+    /* Schedule Page */
+    #schedule_container {
+        display: block;
+    }
+
+    #schedule_title{
+        font-size: max(6vw, 6vh);
+        margin-bottom: -2vh;
+    }
+
+    .day h1 {
+        font-size: max(4vw, 4vh);
     }
 }
