@@ -284,7 +284,7 @@ h2, h3, h4, h5, h6 {
 }
 
 #main_speaker_text h1 {
-    font-size: min(2.7vw, 5.4vh);
+    font-size: min(3vw, 6vh);
     font-weight: 800;
 }
 
@@ -326,9 +326,11 @@ h2, h3, h4, h5, h6 {
 }
 
 .speaker_card h1 {
-    font-size: min(1.5vw, 3vh);
+    font-size: min(2.5vw, 5vh);
     font-weight: 400;
-    margin-left: 1vw;
+    margin-left: 2.5vw;
+    margin-top: 1.25vh;
+    margin-bottom: 1vh;
 }
 
 .speaker_card h2 {
@@ -1156,9 +1158,11 @@ h2, h3, h4, h5, h6 {
     }
     
     .speaker_card h1 {
-        font-size: min(3vw, 6vh);
+        font-size: min(4vw, 8vh);
         font-weight: 400;
-        margin-left: 2vw;
+        margin-left: 3vw;
+        margin-top: 0.5vh;
+        margin-bottom: 0.5vh;
     }
     
     .speaker_card h2 {
@@ -1332,5 +1336,10 @@ h2, h3, h4, h5, h6 {
 
     .day h1 {
         font-size: max(4vw, 4vh);
+    }
+    
+    .entry .title h3 {
+        margin: 0;
+        font-size: 85%;
     }
 }
