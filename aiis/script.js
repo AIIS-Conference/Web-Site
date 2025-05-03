@@ -20,7 +20,13 @@ function eraseCookie(name) {
     document.cookie = name + '=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
+    const loadingScreen = document.getElementById("loading-screen");
+    const randomTime = Math.random() * 1500 + 1000;
+    setTimeout(() => {
+        loadingScreen.style.display = "none";
+    }, randomTime);
+
     const speakerCards = document.querySelectorAll(".speaker_card");
     const mainSpeakerCard = document.getElementById("main_speaker_card");
     const mainSpeakerImage = document.getElementById("main_speaker_image");
@@ -31,9 +37,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const moreSpeakersContainer = document.getElementById("more_speakers_container");
     let mainSpeakerSelected = false;
     let previousSpeakerImage = null;
-    
+
     speakerCards.forEach(card => {
-        card.addEventListener("click", function() {
+        card.addEventListener("click", function () {
             const distanceToBottom = document.body.scrollHeight - window.innerHeight - window.scrollY;
 
             if (!mainSpeakerSelected) {
