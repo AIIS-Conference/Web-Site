@@ -22,7 +22,7 @@ function eraseCookie(name) {
 
 document.addEventListener("DOMContentLoaded", function () {
     const loadingScreen = document.getElementById("loading-screen");
-    const randomTime = Math.random() * 1500 + 1000;
+    const randomTime = Math.random() * 500 + 1000;
     setTimeout(() => {
         loadingScreen.style.display = "none";
     }, randomTime);
