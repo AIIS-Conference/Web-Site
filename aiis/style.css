@@ -431,8 +431,10 @@ h2, h3, h4, h5, h6 {
 }
 
 .team_image {
-    width: min(10vw, 20vh);
+    height: min(20vw, 40vh);
+    background: linear-gradient(to right, #4911a0, #330d90, #4911a0);
     border-radius: min(1vw, 2vh);
+    border: 2px solid #e29eff;
 }
 
 .team_background {
