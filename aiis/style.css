@@ -760,6 +760,12 @@ h2, h3, h4, h5, h6 {
 .collaborator {
     width: 10vw;
     padding: 1vw;
+    margin-top: -0.5vw;
+}
+
+#isb.collaborator {
+    height: 5vw;
+    width: 5vw;
 }
 
 #quantum_robotics {
@@ -769,7 +775,7 @@ h2, h3, h4, h5, h6 {
 #collaborators_container {
     position: absolute;
     background-color: rgb(44, 4, 103);
-    width: 40vw;
+    width: 60vw;
     height: 10vh;
     visibility: show;
     border: #4911a0 5px solid;
@@ -1156,6 +1162,12 @@ h2, h3, h4, h5, h6 {
     
     .collaborator {
         width: 35vw;
+        padding: 2vw;
+    }
+
+    #isb.collaborator {
+        width: 35vw;
+        height: 35vw;
         padding: 2vw;
     }
     
