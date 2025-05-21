@@ -760,12 +760,17 @@ h2, h3, h4, h5, h6 {
 .collaborator {
     width: 10vw;
     padding: 1vw;
-    margin-top: -0.5vw;
 }
 
-#isb.collaborator {
+#isb {
     height: 5vw;
     width: 5vw;
+    padding: 0;
+    margin-top: -0.5vh;
+}
+
+#lumina {
+    margin-top: max(-0.25vw, -0.5vh);
 }
 
 #quantum_robotics {
