@@ -673,7 +673,7 @@ h2, h3, h4, h5, h6 {
 #about_text p {
     margin: 0;
     padding: 1vw;
-    font-size: min(2vw, 2vh);
+    font-size: min(1vw, 2vh);
 }
 
 .about_container {
