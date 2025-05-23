@@ -774,7 +774,7 @@ h2, h3, h4, h5, h6 {
 }
 
 #nitro {
-    height: 8vh;
+    height: 11vh;
     width: 11vh;
     padding: 0;
     padding-left: 1vw;
@@ -1182,8 +1182,14 @@ h2, h3, h4, h5, h6 {
     }
 
     #isb.collaborator {
-        width: 35vw;
-        height: 35vw;
+        width: 15vw;
+        height: 15vw;
+        padding: 2vw;
+    }
+
+    #nitro.collaborator {
+        width: 15vw;
+        height: 15vw;
         padding: 2vw;
     }
     
