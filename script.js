@@ -41,11 +41,40 @@ document.addEventListener("DOMContentLoaded", function () {
     const mainSpeakerDescription = document.getElementById("main_speaker_description");
     const moreSpeakersTitle = document.getElementById("more_speakers_title");
     const moreSpeakersContainer = document.getElementById("more_speakers_container");
+    const speakerInfo = document.getElementById("speaker_info");
     let mainSpeakerSelected = false;
     let previousSpeakerImage = null;
 
     speakerCards.forEach(card => {
         card.addEventListener("click", function () {
+            // Check if the clicked card has the "tba" class
+        if (card.classList.contains("tba")) {
+            speakerInfo.style.flexDirection = "column";
+            speakerInfo.style.justifyContent = "center";
+            speakerInfo.style.alignItems = "center";
+            speakerInfo.style.width = "100%";
+            mainSpeakerName.style.marginTop = "min(1vw, 2vh)";
+            mainSpeakerName.style.marginLeft = "max(-5vw, -10vh)";
+            if (window.matchMedia("(orientation: portrait)").matches) {
+                speakerInfo.style.display = "block";
+                mainSpeakerName.style.marginTop = "2vh";
+                mainSpeakerName.style.marginLeft = "auto";
+                mainSpeakerName.style.marginRight = "auto";
+                mainSpeakerName.style.textAlign = "right";
+            }
+            else {
+                speakerInfo.style.display = "flex";
+            }
+        }
+        else {
+            speakerInfo.style.display = "";
+            speakerInfo.style.flexDirection = "";
+            speakerInfo.style.justifyContent = "";
+            speakerInfo.style.alignItems = "";
+            speakerInfo.style.width = "";
+            mainSpeakerName.style.marginTop = "";
+            mainSpeakerName.style.marginLeft = "";
+        }
             const distanceToBottom = document.body.scrollHeight - window.innerHeight - window.scrollY;
 
             if (!mainSpeakerSelected) {
@@ -80,6 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
             mainSpeakerName.textContent = card.querySelector(".speaker_name").textContent;
             mainSpeakerCompany.textContent = card.querySelector(".speaker_company").textContent;
             mainSpeakerDescription.textContent = card.querySelector(".speaker_description").textContent;
+            console.log(mainSpeakerDescription.textContent);
         });
     });
 

@@ -300,6 +300,7 @@ h2, h3, h4, h5, h6 {
 
 #main_speaker_image {
     height: min(20vw, 40vh);
+    width: min(50vw, 100vh);
     border-radius: min(10vw, 20vh);
     margin-left: 0;
     margin-right: 10vw;
@@ -317,24 +318,12 @@ h2, h3, h4, h5, h6 {
     text-align: justify;
 }
 
-/* temp */
-#speaker_info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-#main_speaker_text h1 {
+#main_speaker_name {
     font-size: min(3vw, 6vh);
     font-weight: 800;
-    /* temp */
-    margin-top: min(1vw, 2vh);
-    margin-left: min(-5vw, 10vh);
 }
 
-#main_speaker_text h2 {
+#main_speaker_company {
     font-size: min(1.5vw, 3vh);
     font-weight: 400;
     margin-top: -4vh;
@@ -372,22 +361,31 @@ h2, h3, h4, h5, h6 {
 }
 
 .speaker_card h1 {
-    font-size: min(2.5vw, 5vh);
+    font-size: min(1.5vw, 3vh);
     font-weight: 400;
-    text-align: center;
-    margin-top: 1.25vh;
-    margin-bottom: 6vh;
+    margin-left: 1vw;
 }
 
 .speaker_card h2 {
     font-size: min(1vw, 2vh);
     font-weight: 400;
-    text-align: center;
+    margin-left: 1vw;
 }
 
 .speaker_card p {
     margin-left: 1vw;
     font-size: min(1vw, 2vh)
+}
+
+.tba h1 {
+    font-size: min(2.5vw, 5vh);
+    margin-left: 13%;
+    margin-top: 1.25vh;
+    margin-bottom: 6vh;
+}
+
+.tba h2 {
+    text-align: center;
 }
 
 .speaker_card .speaker_description {
@@ -401,6 +399,7 @@ h2, h3, h4, h5, h6 {
 
 .speaker_image {
     width: min(20vw, 40vh);
+    height: min(20vw, 40vh);
     border-top-left-radius: min(1vw, 2vh);
     border-top-right-radius: min(1vw, 2vh);
 }
@@ -1234,7 +1233,7 @@ h2, h3, h4, h5, h6 {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        margin-top: min(-5vw, -10vh);
+        margin-top: min(-4vw, -8vh);
         padding-top: 5vh;
     }
     
@@ -1253,6 +1252,10 @@ h2, h3, h4, h5, h6 {
         margin-top: 0.5vh;
         margin-bottom: 0.5vh;
     }
+
+    #ana_maria_masoud {
+        font-size: min(3.5vw, 7vh);
+    }
     
     .speaker_card h2 {
         font-size: min(2vw, 4vh);
@@ -1264,18 +1267,14 @@ h2, h3, h4, h5, h6 {
         margin-left: 2vw;
         font-size: min(2vw, 4vh);
     }
-    
-    .speaker_card .speaker_description {
-        font-size: 0px;
-        visibility: hidden;
-    }
-    
-    .speaker_card:hover {
-        cursor: pointer;
-    }
+
+    .tba h1 {
+    margin-left: 11%;
+}
     
     .speaker_image {
         width: min(30vw, 60vh);
+        height: min(30vw, 60vh);
         border-top-left-radius: min(2vw, 4vh);
         border-top-right-radius: min(2vw, 4vh);
     }
@@ -1295,6 +1294,7 @@ h2, h3, h4, h5, h6 {
     
     #main_speaker_image {
         height: min(50vw, 100vh);
+        width: min(50vw, 100vh);
         border-radius: min(25vw, 50vh);
         margin-left: auto;
         margin-right: auto;
@@ -1319,9 +1319,7 @@ h2, h3, h4, h5, h6 {
     #main_speaker_text h1 {
         font-size: min(8vw, 16vh);
         font-weight: 800;
-        /* temp */
-        margin-top: max(-5vw, -10vh);
-        margin-left: 0;
+        white-space: nowrap;
     }
     
     #main_speaker_text h2 {
@@ -1343,8 +1341,6 @@ h2, h3, h4, h5, h6 {
         /* on start */
         visibility: hidden;
         height: 0;
-        /* temp */
-        margin-top: -2vh;
     }
 
     /* Previous Edition*/
