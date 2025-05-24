@@ -913,6 +913,20 @@ h2, h3, h4, h5, h6 {
     display: block;
 }
 
+/* Tablet Landscape Styles */
+@media (max-aspect-ratio: 1.6) {
+    /* Logo */
+    .logo-img {
+        width: min(20vh, 20vw);
+        margin-left: min(-1.5vh, -1.5vw);
+    }
+    
+    .logo-text {
+        font-size: min(2.75vh, 2.75vw);
+        margin-left: min(-1.2vh, -1.2vw);
+    }
+}
+
 /* Mobile Styles */
 @media (orientation: portrait) {
     /* Logo */
@@ -933,7 +947,6 @@ h2, h3, h4, h5, h6 {
     .logo-img {
         width: min(30vh, 30vw);
         margin-left: min(-1.5vh, -1.5vw);
-    
     }
     
     .logo-text {
@@ -1457,4 +1470,36 @@ h2, h3, h4, h5, h6 {
     margin: 0;
     width: min-content;
 }
+    
+/* Tablet Portrait Styles */
+@media (min-aspect-ratio: 0.6) {
+    /* Logo */
+    .logo-img {
+        width: min(19vh, 19vw);
+        margin-left: min(-1.5vh, -1.5vw);
+    }
+    
+    .logo-text {
+        font-size: min(2.5vh, 2.5vw);
+        margin-left: min(-1.2vh, -1.2vw);
+    }
+    
+    /* Pages */
+    .pages {
+        width: min(23vh, 23vw);
+        height: min(23vh, 23vw);
+        background-image: url('images/cloud.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center max(-4vh, -4vw);
+        text-align: center;
+        padding: min(2vh, 2vw);
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+    }
+}
+    
 }
