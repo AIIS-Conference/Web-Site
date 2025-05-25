@@ -39,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const mainSpeakerName = document.getElementById("main_speaker_name");
     const mainSpeakerCompany = document.getElementById("main_speaker_company");
     const mainSpeakerDescription = document.getElementById("main_speaker_description");
+    const mainSpeakerJobTitle = document.getElementById("main_speaker_job_title");
     const moreSpeakersTitle = document.getElementById("more_speakers_title");
     const moreSpeakersContainer = document.getElementById("more_speakers_container");
     const speakerInfo = document.getElementById("speaker_info");
@@ -109,7 +110,7 @@ document.addEventListener("DOMContentLoaded", function () {
             mainSpeakerName.textContent = card.querySelector(".speaker_name").textContent;
             mainSpeakerCompany.textContent = card.querySelector(".speaker_company").textContent;
             mainSpeakerDescription.textContent = card.querySelector(".speaker_description").textContent;
-            console.log(mainSpeakerDescription.textContent);
+            mainSpeakerJobTitle.textContent = card.querySelector(".speaker_job_title").textContent;
         });
     });
 
