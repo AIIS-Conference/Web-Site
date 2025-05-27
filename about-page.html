@@ -8,6 +8,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body id="about_body">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DDS4EQ8VRY"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-DDS4EQ8VRY');
+    </script>
     <script src="script.js"></script>
     <div id="loading-screen">
         <div class="spinner"></div>
@@ -82,12 +89,12 @@
         </div>
     </div>
     <div id="collaborators_container">
-        <img id="meta" class="collaborator" src="images/collaborators/meta.png">
-        <img id="ichb" class="collaborator" src="images/collaborators/ichb.png">
-        <img id="lumina" class="collaborator" src="images/collaborators/lumina.png">
-        <img id="isb" class="collaborator" src="images/collaborators/isb.png">
-        <img id="nitro" class="collaborator" src="images/collaborators/nitro.png">
-        <img id="mudt" class="collaborator" src="images/collaborators/mudt.png">
+        <img id="meta" class="collaborator" src="images/collaborators/meta.png"  onclick="window.open('https://metacareer.ro/', '_blank');">
+        <img id="ichb" class="collaborator" src="images/collaborators/ichb.png"  onclick="window.open('https://ichb.ro/', '_blank');">
+        <img id="lumina" class="collaborator" src="images/collaborators/lumina.png"  onclick="window.open('https://lumina.ro/ro_lumina/', '_blank');">
+        <img id="isb" class="collaborator" src="images/collaborators/isb.png"  onclick="window.open('https://isb.ro/', '_blank');">
+        <img id="nitro" class="collaborator" src="images/collaborators/nitro.png"  onclick="window.open('https://nitro-ai.org/', '_blank');">
+        <img id="mudt" class="collaborator" src="images/collaborators/mudt.png"  onclick="window.open('https://uni-munich.de/', '_blank');">
     </div>
 </body>
 </html>
