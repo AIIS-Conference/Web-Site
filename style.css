@@ -799,11 +799,11 @@ h2, h3, h4, h5, h6 {
 
 #collaborators_container {
     position: absolute;
-    background-color: rgb(44, 4, 103);
+    background-color: rgb(255, 255, 255);
     width: 60vw;
     height: 10vh;
     visibility: show;
-    border: #4911a0 5px solid;
+    border: rgb(72, 82, 198) 5px solid;
     top: calc(100% - 10vh - 10px);
     left: 0;
     display: flex;
