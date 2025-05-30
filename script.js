@@ -151,12 +151,18 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 window.matchMedia("(orientation: portrait)").addEventListener("change", (e) => {
+        const mainSpeakerName = document.getElementById("main_speaker_name");
     const mainSpeakerCard = document.getElementById("main_speaker_card");
     if (e.matches) {
         // Portrait mode
         mainSpeakerCard.style.display = "block";
+        mainSpeakerName.style.marginTop = "2vh";
+        mainSpeakerName.style.marginLeft = "auto";
+        mainSpeakerName.style.marginRight = "auto";
     } else {
         // Landscape mode
         mainSpeakerCard.style.display = "flex";
+        mainSpeakerName.style.marginTop = "min(8.5vw, 17vh)";
+        mainSpeakerName.style.marginLeft = "max(-5vw, -10vh)";
     }
 });
