@@ -23,7 +23,7 @@ function eraseCookie(name) {
 document.addEventListener("DOMContentLoaded", function () {
     const loadingScreen = document.getElementById("loading-screen");
     let randomTime;
-    if (document.location.pathname.endsWith("previous-edition.html")) {
+    if (document.location.pathname.endsWith("previous-edition/")) {
         randomTime = Math.random() * 500 + 1000;
     } else {
         randomTime = Math.random() * 500 + 500;
@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // Store the current speaker image
             previousSpeakerImage = card.querySelector("img");
             previousSpeakerImage.dataset.originalSrc = previousSpeakerImage.src;
-            previousSpeakerImage.src = "images/speakers/gray.jpg";
+            previousSpeakerImage.src = "../images/speakers/gray.jpg";
 
             // Update main speaker details here
             mainSpeakerImage.src = card.querySelector("img").dataset.originalSrc;
@@ -114,15 +114,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    if (document.location.pathname.endsWith("previous-edition.html")) {
+    if (document.location.pathname.endsWith("previous-edition/")) {
         const slideshowImages = [
-            "images/previous_speakers/pictures/previous_edition_1.jpg",
-            "images/previous_speakers/pictures/previous_edition_2.jpg",
-            "images/previous_speakers/pictures/previous_edition_3.jpg",
-            "images/previous_speakers/pictures/previous_edition_4.jpg",
-            "images/previous_speakers/pictures/previous_edition_5.jpg",
-            "images/previous_speakers/pictures/previous_edition_6.jpg",
-            "images/previous_speakers/pictures/previous_edition_7.jpg"
+            "../images/previous_speakers/pictures/previous_edition_1.jpg",
+            "../images/previous_speakers/pictures/previous_edition_2.jpg",
+            "../images/previous_speakers/pictures/previous_edition_3.jpg",
+            "../images/previous_speakers/pictures/previous_edition_4.jpg",
+            "../images/previous_speakers/pictures/previous_edition_5.jpg",
+            "../images/previous_speakers/pictures/previous_edition_6.jpg",
+            "../images/previous_speakers/pictures/previous_edition_7.jpg"
         ];
     
         // Shuffle the array using the Fisher-Yates algorithm

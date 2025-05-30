@@ -1229,18 +1229,11 @@ h2, h3, h4, h5, h6 {
     
     #collaborators_container {
         position: relative;
-        background-color: rgb(44, 4, 103);
         width: 40vw;
         height: 38.3vh;
-        visibility: show;
-        border: #4911a0 2px solid;
         margin-top: -38.8vh;
         margin-right: -7vw;
         margin-left: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
         top: 0;
         left: 0;
     }
