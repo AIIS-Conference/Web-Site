@@ -370,6 +370,7 @@ h2, h3, h4, h5, h6 {
     font-size: min(1vw, 2vh);
     font-weight: 400;
     margin-left: 1vw;
+    margin-right: 1vw;
 }
 
 .speaker_card p {

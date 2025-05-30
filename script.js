@@ -54,14 +54,14 @@ document.addEventListener("DOMContentLoaded", function () {
             speakerInfo.style.justifyContent = "center";
             speakerInfo.style.alignItems = "center";
             speakerInfo.style.width = "100%";
-            mainSpeakerName.style.marginTop = "min(1vw, 2vh)";
+            mainSpeakerName.style.marginTop = "min(8.5vw, 17vh)";
             mainSpeakerName.style.marginLeft = "max(-5vw, -10vh)";
             if (window.matchMedia("(orientation: portrait)").matches) {
                 speakerInfo.style.display = "block";
                 mainSpeakerName.style.marginTop = "2vh";
                 mainSpeakerName.style.marginLeft = "auto";
                 mainSpeakerName.style.marginRight = "auto";
-                mainSpeakerName.style.textAlign = "right";
+                mainSpeakerName.style.textAlign = "center";
             }
             else {
                 speakerInfo.style.display = "flex";
