@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Alegreya+Sans:wght@400;700;800&display=swap');
+
+/* Global Styles */
+* {
+    user-select: none !important;
+    -webkit-user-select: none !important;
+    -ms-user-select: none !important;
+    -moz-user-select: none !important;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-color: rgb(127, 127, 127, 80%) black;
+    scrollbar-width: thin;
+}
+
+body {
+    background-color: rgb(27, 9, 125);
+    color: white;
+    font-family: 'Alegreya Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
+}
+
+h1 {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Exo 2', sans-serif;
+}
+
+/* Loading Screen */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#loading-screen .spinner {
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    border-top: 5px solid white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Logo */
+.logo {
+    height: min-content;
+    display: flex;
+    align-items: center;
+    margin-top: min(-2vh, -2vw);
+    width: max-content;
+    top: 0;
+    left: 0;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.logo-img {
+    width: min(25vh, 25vw);
+    margin-left: min(-1.25vh, -1.25vw);
+
+}
+
+.logo-text {
+    font-size: min(3.3vh, 3.3vw);
+    margin-left: min(-1vh, -1vw);
+}
+
+/* Back Button */
+.button {
+    display: block;
+    position: absolute;
+    right: min(20px, 1vw);
+    top: min(20px, 1vw);
+    width: 56px;
+    height: 56px;
+    overflow: hidden;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+}
+
+.button:before,
+.button:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    inset: 7px;
+}
+
+.button:before {
+    border: 4px solid #f0eeef;
+    transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms, transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+}
+
+.button:after {
+    border: 4px solid rgb(127, 1, 233);
+    transform: scale(1.3);
+    transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    opacity: 0;
+}
+
+.button:hover:before,
+.button:focus:before {
+    opacity: 0;
+    transform: scale(0.7);
+    transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.button:hover:after,
+.button:focus:after {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms, transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+}
+
+.button-box {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.button-elem {
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin: 17px 18px 0 18px;
+    transform: rotate(180deg);
+    fill: #f0eeef;
+}
+
+.button:hover .button-box,
+.button:focus .button-box {
+    transition: 0.4s;
+    transform: translateX(-56px);
+}
+
+/* Tablet Landscape Styles */
+@media (max-aspect-ratio: 1.6) {
+    /* Logo */
+    .logo-img {
+        width: min(20vh, 20vw);
+        margin-left: min(-1.5vh, -1.5vw);
+    }
+    
+    .logo-text {
+        font-size: min(2.75vh, 2.75vw);
+        margin-left: min(-1.2vh, -1.2vw);
+    }
+}
+
+/* Mobile Styles */
+@media (orientation: portrait) {
+    /* Logo */
+    .logo {
+        height: min-content;
+        display: flex;
+        align-items: center;
+        margin-top: min(-2vh, -2vw);
+        width: max-content;
+        top: 0;
+        left: 0;
+    }
+    
+    .logo:hover {
+        cursor: pointer;
+    }
+    
+    .logo-img {
+        width: min(30vh, 30vw);
+        margin-left: min(-1.5vh, -1.5vw);
+    }
+    
+    .logo-text {
+        font-size: min(3.96vh, 3.96vw);
+        margin-left: min(-1.2vh, -1.2vw);
+    }
+    /* Tablet Portrait Styles */
+    @media (min-aspect-ratio: 0.6) {
+        /* Logo */
+        .logo-img {
+            width: min(19vh, 19vw);
+            margin-left: min(-1.5vh, -1.5vw);
+        }
+        
+        .logo-text {
+            font-size: min(2.5vh, 2.5vw);
+            margin-left: min(-1.2vh, -1.2vw);
+        }
+    }
+}

@@ -1,0 +1,27 @@
+#venue_map {
+    width: 80%;
+    height: 80vh;
+    margin-left: 10%;
+    margin-bottom: 50px;
+}
+
+#venue_title {
+    font-size: max(3vw, 6vh);
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 800;
+    text-align: center;
+}
+
+#venue_text {
+    margin-left: 7.8vw;
+}
+
+#venue_text h2 {
+    font-size: max(1.5vw, 2.5vh);
+    margin-left: 2vw;
+}
+
+#venue_text p {
+    font-size: max(1vw, 1.75vh);
+    margin-left: 2vw;
+}

@@ -1,0 +1,210 @@
+#speaker_title {
+    font-size: min(5vw, 10vh);
+    margin-top: min(1vw, 2vh);
+    text-align: center;
+}
+
+#main_speaker_card {
+    display: flex;
+    justify-content: center;
+    /* on start */
+    visibility: hidden;
+    height: 0;
+}
+
+#main_speaker_image {
+    height: min(20vw, 40vh);
+    width: min(20vw, 40vh);
+    border-radius: min(10vw, 20vh);
+    margin-left: 0;
+    margin-right: 10vw;
+}
+
+#main_speaker_text {
+    width: 30vw;
+    text-align: justify;
+}
+
+#main_speaker_name {
+    font-size: min(3vw, 6vh);
+    font-weight: 800;
+}
+
+#main_speaker_company {
+    font-size: min(1.5vw, 3vh);
+    font-weight: 400;
+    margin-top: -4vh;
+}
+
+#main_speaker_text p {
+    font-size: min(1vw, 2vh);
+}
+
+#more_speakers_title {
+    text-align: center;
+    font-size: min(1.5vw, 3vh);
+    font-weight: 400;
+    margin-top: 5vh;
+    padding-bottom: 5vh;
+    /* on start */
+    visibility: hidden;
+    height: 0;
+}
+
+#more_speakers_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: min(-6vw, -12vh);
+}
+
+.speaker_card {
+    background-color: #6B717E;
+    width: min(20vw, 40vh);
+    border-radius: min(1vw, 2vh);
+    margin-bottom: 3vw;
+    margin-right: 3vw;
+    margin-left: 3vw;
+}
+
+.speaker_card h1 {
+    font-size: min(1.5vw, 3vh);
+    font-weight: 400;
+    margin-left: 1vw;
+}
+
+.speaker_card h2 {
+    font-size: min(1vw, 2vh);
+    font-weight: 400;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.speaker_card p {
+    margin-left: 1vw;
+    font-size: min(1vw, 2vh)
+}
+
+.tba h1 {
+    font-size: min(2.5vw, 5vh);
+    margin-left: 13%;
+    margin-top: 1.25vh;
+    margin-bottom: 6vh;
+}
+
+.tba h2 {
+    text-align: center;
+}
+
+.speaker_card .speaker_description {
+    font-size: 0px;
+    visibility: hidden;
+}
+
+.speaker_card .speaker_job_title {
+    font-size: 0px;
+    visibility: hidden;
+}
+
+.speaker_card:hover {
+    cursor: pointer;
+}
+
+.speaker_image {
+    width: min(20vw, 40vh);
+    height: min(20vw, 40vh);
+    border-top-left-radius: min(1vw, 2vh);
+    border-top-right-radius: min(1vw, 2vh);
+}
+
+/* Mobile Styles */
+@media (orientation: portrait) {
+    #more_speakers_container {
+        margin-top: min(-4vw, -8vh);
+        padding-top: 5vh;
+    }
+    
+    .speaker_card {
+        width: min(30vw, 60vh);
+        border-radius: min(2vw, 4vh);
+        margin-bottom: 6vw;
+        margin-right: 6vw;
+        margin-left: 6vw;
+    }
+    
+    .speaker_card h1 {
+        font-size: min(4vw, 8vh);
+        margin-top: 0.5vh;
+        margin-bottom: 0.5vh;
+    }
+
+    #ana_maria_masoud {
+        font-size: min(3.5vw, 7vh);
+    }
+    
+    #george-dumitrache {
+        font-size: min(3.5vw, 7vh);
+    }
+
+    .speaker_card h2 {
+        font-size: min(2vw, 4vh);
+        margin-left: 2vw;
+    }
+    
+    .speaker_card p {
+        margin-left: 2vw;
+        font-size: min(2vw, 4vh);
+    }
+
+    .tba h1 {
+    margin-left: 11%;
+    }
+    
+    .speaker_image {
+        width: min(30vw, 60vh);
+        height: min(30vw, 60vh);
+        border-top-left-radius: min(2vw, 4vh);
+        border-top-right-radius: min(2vw, 4vh);
+    }
+    
+    #speaker_title {
+        font-size: min(10vw, 20vh);
+        margin-top: min(1vw, 2vh);
+        margin-bottom: min(10vw, 20vh);
+    }
+    
+    #main_speaker_image {
+        height: min(50vw, 100vh);
+        width: min(50vw, 100vh);
+        border-radius: min(25vw, 50vh);
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    #main_speaker_text {
+        width: 70vw;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    
+    #main_speaker_name {
+        font-size: min(8vw, 16vh);
+        white-space: nowrap;
+    }
+    
+    #main_speaker_company {
+        font-size: min(6vw, 12vh);
+        margin-top: 0;
+    }
+    
+    #main_speaker_text p {
+        font-size: min(4vw, 8vh);
+    }
+    
+    #more_speakers_title {
+        font-size: min(6vw, 12vh);
+        padding-bottom: 0vh;
+    }
+}
