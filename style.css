@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Alegreya+Sans:wght@400;700;800&display=swap');
 
 /* Global Styles */
+* {
+    user-select: none !important;
+    -webkit-user-select: none !important;
+    -ms-user-select: none !important;
+    -moz-user-select: none !important;
+}
+
 html {
     scroll-behavior: smooth;
     scrollbar-color: rgb(127, 127, 127, 80%) black;
@@ -13,13 +20,6 @@ body {
     font-family: 'Alegreya Sans', sans-serif;
     margin: 0;
     padding: 0;
-}
-
-body, html {
-    user-select: none;
-    -webkit-user-select: none; /* Safari */
-    -moz-user-select: none;    /* Firefox */
-    -ms-user-select: none;     /* IE10+/Edge */
 }
 
 p {
