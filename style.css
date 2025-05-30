@@ -1268,6 +1268,10 @@ h2, h3, h4, h5, h6 {
         font-size: min(3.5vw, 7vh);
     }
     
+    #george-dumitrache {
+        font-size: min(3.5vw, 7vh);
+    }
+
     .speaker_card h2 {
         font-size: min(2vw, 4vh);
         font-weight: 400;

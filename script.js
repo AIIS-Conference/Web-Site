@@ -149,3 +149,14 @@ document.addEventListener("DOMContentLoaded", function () {
         setInterval(changeSlideshowImage, 3000);
     }
 });
+
+window.matchMedia("(orientation: portrait)").addEventListener("change", (e) => {
+    const mainSpeakerCard = document.getElementById("main_speaker_card");
+    if (e.matches) {
+        // Portrait mode
+        mainSpeakerCard.style.display = "block";
+    } else {
+        // Landscape mode
+        mainSpeakerCard.style.display = "flex";
+    }
+});
