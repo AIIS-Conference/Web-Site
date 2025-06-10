@@ -6,7 +6,7 @@
 
 #schedule_container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     min-height: 100vh;
     width: 100%;
@@ -15,13 +15,14 @@
 }
 
 .day {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: max-content;
-    max-width: 90vw;
-    min-width: 40vw;
-    margin: auto;
-    padding: 5vh 2vw;
+    width: 100%;
+    max-width: 800px;
+    min-width: unset;
+    margin: 0 5vw;
+    padding: 0;
     font-weight: 300;
     color: #333;
     box-sizing: border-box;
@@ -130,12 +131,30 @@
         margin-bottom: -2vh;
     }
 
+    .day {
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        width: max-content;
+        max-width: 90vw;
+        min-width: 40vw;
+        padding: 5vh 2vw;
+        font-weight: 300;
+        color: #333;
+        box-sizing: border-box;
+    }
+
     .day h1 {
         font-size: max(4vw, 4vh);
     }
     
     .entry .title h3 {
         margin: 0;
-        font-size: 85%;
+        margin-top: -40%;
+        font-size: 95%;
+    }
+    .timeline {
+        padding: 50px 50px;
+        padding-bottom: 0;
     }
 }
